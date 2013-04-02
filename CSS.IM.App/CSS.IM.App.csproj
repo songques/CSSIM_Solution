@@ -334,12 +334,14 @@
     <Content Include="CSSLog.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="DirectShow.dll" />
     <Content Include="ISTask.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="GetCert.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ZipLib.dll" />
     <None Include="Resources\ReceiveIco.jpg" />
     <None Include="Resources\Iico.ico" />
     <None Include="Sound\call.wav">
