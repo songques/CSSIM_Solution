@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Administrator\Desktop\IMUpdateWebServices" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Update.aspx" publishTime="09/07/2012 08:31:01" />
+    <file relUrl="bin/IMUpdateWebServices.pdb" publishTime="09/07/2012 08:32:52" />
+    <file relUrl="Web.config" publishTime="09/07/2012 08:31:41" />
+    <file relUrl="bin/IMUpdateWebServices.dll" publishTime="09/07/2012 08:32:52" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32762B16-814C-4362-863B-ACF8C315AF54}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IMLibrary</RootNamespace>
+    <AssemblyName>IMLibrary</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\Bin\IMLibrary.xml</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\Bin\IMLibrary.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AV\BaseClass\DrawDib.cs" />
+    <Compile Include="AV\BaseClass\G972.cs" />
+    <Compile Include="AV\BaseClass\ICM.cs" />
+    <Compile Include="AV\BaseClass\Mixer.cs" />
+    <Compile Include="AV\BaseClass\utiilities.cs" />
+    <Compile Include="AV\BaseClass\VideoCapturer.cs" />
+    <Compile Include="AV\BaseClass\VideoSize.cs" />
+    <Compile Include="AV\BaseClass\YV12TORGB24.cs" />
+    <Compile Include="AV\Controls\AudioCapturer.cs" />
+    <Compile Include="AV\Controls\AudioEncoder.cs" />
+    <Compile Include="AV\Controls\AudioRender.cs" />
+    <Compile Include="AV\Controls\AV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AV\Controls\AV.Designer.cs">
+      <DependentUpon>AV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AV\Controls\AVcommunication.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AV\Controls\AVcommunication.Designer.cs">
+      <DependentUpon>AVcommunication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AV\Controls\AVEX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AV\Controls\VideoCapturer.cs" />
+    <Compile Include="AV\Controls\VideoEncoder.cs" />
+    <Compile Include="AV\Controls\VideoRender.cs" />
+    <Compile Include="AV\Media\AudioIn.cs" />
+    <Compile Include="AV\Media\AudioInDevice.cs" />
+    <Compile Include="AV\Media\AudioOut.cs" />
+    <Compile Include="AV\Media\AudioOutDevice.cs" />
+    <Compile Include="AV\Media\Codec\Audio\AudioCodec.cs" />
+    <Compile Include="AV\Media\Codec\Audio\G711_alaw.cs" />
+    <Compile Include="AV\Media\Codec\Audio\G711_ulaw.cs" />
+    <Compile Include="AV\Media\Codec\Codec.cs" />
+    <Compile Include="AV\Media\Wave\native\MMSYSERR.cs" />
+    <Compile Include="AV\Media\Wave\native\WavConstants.cs" />
+    <Compile Include="AV\Media\Wave\native\WAVEFORMATEX.cs" />
+    <Compile Include="AV\Media\Wave\native\WAVEHDR.cs" />
+    <Compile Include="AV\Media\Wave\native\WAVEOUTCAPS.cs" />
+    <Compile Include="AV\Media\Wave\native\WavFormat.cs" />
+    <Compile Include="AV\Media\Wave\native\WavMethods.cs" />
+    <Compile Include="AV\Media\Wave\WaveIn.cs" />
+    <Compile Include="AV\Media\Wave\WaveOut.cs" />
+    <Compile Include="AV\Media\Wave\WavInDevice.cs" />
+    <Compile Include="AV\Media\Wave\WavOutDevice.cs" />
+    <Compile Include="Class\Calculate.cs" />
+    <Compile Include="Class\DataArrivalEventArgs.cs" />
+    <Compile Include="Class\Department.cs" />
+    <Compile Include="Class\DNS.cs" />
+    <Compile Include="Class\FileTransmits.cs" />
+    <Compile Include="Class\Hasher.cs" />
+    <Compile Include="Class\IP.cs" />
+    <Compile Include="Class\MessageQueue.cs" />
+    <Compile Include="Class\Security.cs" />
+    <Compile Include="Class\TextEncoder.cs" />
+    <Compile Include="Class\UserInfo.cs" />
+    <Compile Include="Controls\Class\fileTransmitEvnetArgs.cs" />
+    <Compile Include="Controls\Class\FormAccess.cs" />
+    <Compile Include="Controls\p2pFileTransmit\p2pFileTransmit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\p2pFileTransmit\p2pFileTransmit.designer.cs">
+      <DependentUpon>p2pFileTransmit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProgressBar\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\FormCapture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\MFCAPI.cs" />
+    <Compile Include="Controls\TaskbarNotifier\TaskbarNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\WebFile\WebFile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WebFile\WebFile.designer.cs">
+      <DependentUpon>WebFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\OleDb.cs" />
+    <Compile Include="Enum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExtRichTextBox\gifCollections.cs" />
+    <Compile Include="ExtRichTextBox\MFCAPI.cs" />
+    <Compile Include="ExtRichTextBox\MyGifPicture.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtRichTextBox\RichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="msgBytes\BitmapInfoHeader.cs" />
+    <Compile Include="msgBytes\ChangePassword.cs" />
+    <Compile Include="msgBytes\Dep.cs" />
+    <Compile Include="msgBytes\GroupInfo.cs" />
+    <Compile Include="msgBytes\LoginInfo.cs" />
+    <Compile Include="msgBytes\Msg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="msgBytes\msgAV.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="msgBytes\msgFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="msgBytes\OnlineUser.cs" />
+    <Compile Include="msgBytes\UserBaseInfo.cs" />
+    <Compile Include="msgBytes\Organization.cs" />
+    <Compile Include="msgBytes\UserData.cs" />
+    <Compile Include="Net\MyTcp.cs" />
+    <Compile Include="Net\SockTCPClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Net\SockTCPClient.designer.cs">
+      <DependentUpon>SockTCPClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Net\SockTCPServer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Net\SockTCPServer.designer.cs">
+      <DependentUpon>SockTCPServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Net\SockUDP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Net\SockUDP.designer.cs">
+      <DependentUpon>SockUDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AV\BaseClass\DrawDib.resx">
+      <DependentUpon>DrawDib.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AV\BaseClass\ICM.resx">
+      <DependentUpon>ICM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AV\Controls\AV.resx">
+      <DependentUpon>AV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AV\Controls\AVcommunication.resx">
+      <DependentUpon>AVcommunication.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\p2pFileTransmit\p2pFileTransmit.resx">
+      <DependentUpon>p2pFileTransmit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScreenCapture\FormCapture.resx">
+      <DependentUpon>FormCapture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TaskbarNotifier\TaskbarNotifier.resx">
+      <DependentUpon>TaskbarNotifier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skin2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skin3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

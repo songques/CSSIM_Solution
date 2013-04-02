@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46ABA9D1-F40B-43EA-889E-4DCE8293E975}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSS.IM.UI</RootNamespace>
+    <AssemblyName>CSSIMUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\BarPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\BasicButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\BasicButton.designer.cs">
+      <DependentUpon>BasicButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\BasicButtonArrows.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\BasicButtonArrows.designer.cs">
+      <DependentUpon>BasicButtonArrows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\BasicCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\BasicComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\BasicComboBox.designer.cs">
+      <DependentUpon>BasicComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\BasicDateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\BasicLable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\BasicLable.designer.cs">
+      <DependentUpon>BasicLable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\BasicRadioButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\BasicTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ChatGroupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ChatGroupListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ChatGroupListView.designer.cs">
+      <DependentUpon>ChatGroupListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\DateTimePickerEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\EmotionDropdown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\EmotionDropdown.designer.cs">
+      <DependentUpon>EmotionDropdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ExRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\FriendControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\ControlPaintEx.cs" />
+    <Compile Include="Control\Graphics\ControlState.cs" />
+    <Compile Include="Control\Graphics\FileTransfersControl\ControlState.cs" />
+    <Compile Include="Control\Graphics\FileTransfersControl\FileTansfersContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\FileTransfersControl\FileTransfersItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\FileTransfersControl\FileTransfersItemStyle.cs" />
+    <Compile Include="Control\Graphics\FileTransfersControl\FileTransfersItemText.cs" />
+    <Compile Include="Control\Graphics\FileTransfersControl\GraphicsPathHelper.cs" />
+    <Compile Include="Control\Graphics\FileTransfersControl\IFileTransfersItemText.cs" />
+    <Compile Include="Control\Graphics\Win32\RoundStyle.cs" />
+    <Compile Include="Control\Graphics\GraphicsPathHelper.cs" />
+    <Compile Include="Control\Graphics\ImageDc.cs" />
+    <Compile Include="Control\Graphics\Imaging\ColorConvertEx.cs" />
+    <Compile Include="Control\Graphics\Imaging\GrayscaleStyel.cs" />
+    <Compile Include="Control\Graphics\Imaging\HSL.cs" />
+    <Compile Include="Control\Graphics\Imaging\RGB.cs" />
+    <Compile Include="Control\Graphics\InterpolationModeGraphics.cs" />
+    <Compile Include="Control\Graphics\ListBoxEx\ListBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\ListBoxEx\ListBoxExItemCollection.cs" />
+    <Compile Include="Control\Graphics\ListBoxEx\ListBoxItemEx.cs" />
+    <Compile Include="Control\Graphics\ListViewEx\ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\MaskControlBase.cs" />
+    <Compile Include="Control\Graphics\PaintThumbEventArgs.cs" />
+    <Compile Include="Control\Graphics\PaintTickEventArgs.cs" />
+    <Compile Include="Control\Graphics\ProgressBarEx\ProgressBarColorTable.cs" />
+    <Compile Include="Control\Graphics\ProgressBarEx\ProgressBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\PushPanel\BorderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\PushPanel\CaptionImageStyle.cs" />
+    <Compile Include="Control\Graphics\PushPanel\CaptionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\PushPanel\CaptionStyle.cs" />
+    <Compile Include="Control\Graphics\PushPanel\Design\PanelDesigner.cs" />
+    <Compile Include="Control\Graphics\PushPanel\Design\PushPanelDesigner.cs" />
+    <Compile Include="Control\Graphics\PushPanel\Design\PushPanelItemDesigner.cs" />
+    <Compile Include="Control\Graphics\PushPanel\PanelBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\PushPanel\PanelColorTable.cs" />
+    <Compile Include="Control\Graphics\PushPanel\PushPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\PushPanel\PushPanelItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\PushPanel\PushPanelItemCaptionClickEventArgs.cs" />
+    <Compile Include="Control\Graphics\RegionHelper.cs" />
+    <Compile Include="Control\Graphics\RenderHelper.cs" />
+    <Compile Include="Control\Graphics\RoundStyle.cs" />
+    <Compile Include="Control\Graphics\ScrollBar\HScrollBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\ScrollBar\IScrollBarPaint.cs" />
+    <Compile Include="Control\Graphics\ScrollBar\PaintScrollBarArrowEventArgs.cs" />
+    <Compile Include="Control\Graphics\ScrollBar\PaintScrollBarThumbEventArgs.cs" />
+    <Compile Include="Control\Graphics\ScrollBar\PaintScrollBarTrackEventArgs.cs" />
+    <Compile Include="Control\Graphics\ScrollBar\ScrollBarColorTable.cs" />
+    <Compile Include="Control\Graphics\ScrollBar\ScrollBarHistTest.cs" />
+    <Compile Include="Control\Graphics\ScrollBar\ScrollBarManager.cs" />
+    <Compile Include="Control\Graphics\ScrollBar\VScrollBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\SmoothingModeGraphics.cs" />
+    <Compile Include="Control\Graphics\ThumbArrowDirection.cs" />
+    <Compile Include="Control\Graphics\TrackBarEx\TrackBarColorTable.cs" />
+    <Compile Include="Control\Graphics\TrackBarEx\TrackBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Graphics\Win32\ClassName.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\AC.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\CDDS.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\CDRF.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\GWL.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\HWND.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\ICC.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\LPSTR.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\NM.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\OBJID.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\RDW.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\SBM.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\SS.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\SW.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\SWP.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\TBM.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\TernaryRasterOperations.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\TTDT.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\TTF.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\TTI.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\TTM.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\TTN.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\TTS.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\VK.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\WM.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\WS.cs" />
+    <Compile Include="Control\Graphics\Win32\Const\WS_EX.cs" />
+    <Compile Include="Control\Graphics\Win32\Enum\TRACKMOUSEEVENT_FLAGS.cs" />
+    <Compile Include="Control\Graphics\Win32\Helper.cs" />
+    <Compile Include="Control\Graphics\Win32\NativeMethods.cs" />
+    <Compile Include="Control\Graphics\Win32\Result.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\BLENDFUNCTION.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\INITCOMMONCONTROLSEX.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\NMCUSTOMDRAW.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\NMHDR.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\NMTTCUSTOMDRAW.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\NMTTDISPINFO.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\PAINTSTRUCT.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\POINT.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\RECT.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\SCROLLBARINFO.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\SCROLLINFO.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\STYLESTRUCT.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\TOOLINFO.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\TRACKMOUSEEVENT.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\TT_HITTESTINFO.cs" />
+    <Compile Include="Control\Graphics\Win32\Struct\WINDOWPOS.cs" />
+    <Compile Include="Control\GroupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\GroupFriendControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\HeadPortrait.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\IChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\IChatForm.designer.cs">
+      <DependentUpon>IChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\IQQMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\IQQMainForm.designer.cs">
+      <DependentUpon>IQQMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LoginButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MiniFriendControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PanelQQText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PanelQQText.designer.cs">
+      <DependentUpon>PanelQQText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\QQContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\QQGroupChatListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\QQHistoryListViewEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\QQListViewEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\QQListViewEx.designer.cs">
+      <DependentUpon>QQListViewEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\QQtextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\QQToolStripMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\QQToolStripSeparator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\SetBarButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\SetLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\SPanle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\SPanle.designer.cs">
+      <DependentUpon>SPanle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\StateButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\StateButton.designer.cs">
+      <DependentUpon>StateButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TabImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\BarImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\Friend.cs" />
+    <Compile Include="Entity\Group.cs" />
+    <Compile Include="Entity\UserInfo.cs" />
+    <Compile Include="Face\EditorServiceContext.cs" />
+    <Compile Include="Face\EmotionContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Face\EmotionItem.cs" />
+    <Compile Include="Face\EventArgs.cs" />
+    <Compile Include="Face\GifBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Face\GripBounds.cs" />
+    <Compile Include="Face\ItemCollectionBase.cs" />
+    <Compile Include="Face\Nativemethods.cs" />
+    <Compile Include="Face\PanelDesigner.cs" />
+    <Compile Include="Face\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\BasicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\BasicForm.designer.cs">
+      <DependentUpon>BasicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\BasicFormNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\BasicFormNC.designer.cs">
+      <DependentUpon>BasicFormNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\BasicMsgBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\BasicMsgBoxForm.designer.cs">
+      <DependentUpon>BasicMsgBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MsgBasicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MsgBasicForm.designer.cs">
+      <DependentUpon>MsgBasicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MsgBox.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Roster\IRosterControl.cs" />
+    <Compile Include="Util\MFCAPI.cs" />
+    <Compile Include="Util\Path.cs" />
+    <Compile Include="Util\ResClass.cs" />
+    <Compile Include="Util\Reverser.cs" />
+    <Compile Include="Util\SkinUtil.cs" />
+    <Compile Include="Util\SoundPlayEx.cs" />
+    <Compile Include="Util\StringFinal.cs" />
+    <Compile Include="Util\TaskMenu.cs" />
+    <Compile Include="Util\Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\BarPanel.resx">
+      <DependentUpon>BarPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\BasicButtonArrows.resx">
+      <DependentUpon>BasicButtonArrows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\BasicComboBox.resx">
+      <DependentUpon>BasicComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\BasicLable.resx">
+      <DependentUpon>BasicLable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\BasicTextBox.resx">
+      <DependentUpon>BasicTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ChatGroupControl.resx">
+      <DependentUpon>ChatGroupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\EmotionDropdown.resx">
+      <DependentUpon>EmotionDropdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\FriendControl.resx">
+      <DependentUpon>FriendControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\GroupFriendControl.resx">
+      <DependentUpon>GroupFriendControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\IChatForm.resx">
+      <DependentUpon>IChatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\IQQMainForm.resx">
+      <DependentUpon>IQQMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MiniFriendControl.resx">
+      <DependentUpon>MiniFriendControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PanelQQText.resx">
+      <DependentUpon>PanelQQText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\SPanle.resx">
+      <DependentUpon>SPanle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\StateButton.resx">
+      <DependentUpon>StateButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\BasicForm.resx">
+      <DependentUpon>BasicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\BasicFormNC.resx">
+      <DependentUpon>BasicFormNC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\BasicMsgBoxForm.resx">
+      <DependentUpon>BasicMsgBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MsgBasicForm.resx">
+      <DependentUpon>MsgBasicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSS.IM.XMPP\CSS.IM.XMPP.csproj">
+      <Project>{A2F3FA34-0F78-4106-A27A-0F4182AC03E9}</Project>
+      <Name>CSS.IM.XMPP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Ext\Cursor.png" />
+    <Content Include="Resources\Ext\nonevoid.png" />
+    <Content Include="Resources\Ext\RemoteDesktopWating.jpg" />
+    <Content Include="Resources\Ext\root.gif" />
+    <Content Include="Resources\Ext\user.png" />
+    <Content Include="Resources\Ext\util.png" />
+    <Content Include="Resources\Face\0.gif" />
+    <Content Include="Resources\Face\1.gif" />
+    <Content Include="Resources\Face\10.gif" />
+    <Content Include="Resources\Face\100.gif" />
+    <Content Include="Resources\Face\101.gif" />
+    <Content Include="Resources\Face\102.gif" />
+    <Content Include="Resources\Face\103.gif" />
+    <Content Include="Resources\Face\104.gif" />
+    <Content Include="Resources\Face\105.gif" />
+    <Content Include="Resources\Face\106.gif" />
+    <Content Include="Resources\Face\107.gif" />
+    <Content Include="Resources\Face\108.gif" />
+    <Content Include="Resources\Face\109.gif" />
+    <Content Include="Resources\Face\11.gif" />
+    <Content Include="Resources\Face\110.gif" />
+    <Content Include="Resources\Face\111.gif" />
+    <Content Include="Resources\Face\112.gif" />
+    <Content Include="Resources\Face\113.gif" />
+    <Content Include="Resources\Face\114.gif" />
+    <Content Include="Resources\Face\115.gif" />
+    <Content Include="Resources\Face\116.gif" />
+    <Content Include="Resources\Face\117.gif" />
+    <Content Include="Resources\Face\118.gif" />
+    <Content Include="Resources\Face\119.gif" />
+    <Content Include="Resources\Face\12.gif" />
+    <Content Include="Resources\Face\120.gif" />
+    <Content Include="Resources\Face\121.gif" />
+    <Content Include="Resources\Face\122.gif" />
+    <Content Include="Resources\Face\123.gif" />
+    <Content Include="Resources\Face\124.gif" />
+    <Content Include="Resources\Face\125.gif" />
+    <Content Include="Resources\Face\126.gif" />
+    <Content Include="Resources\Face\127.gif" />
+    <Content Include="Resources\Face\128.gif" />
+    <Content Include="Resources\Face\129.gif" />
+    <Content Include="Resources\Face\13.gif" />
+    <Content Include="Resources\Face\130.gif" />
+    <Content Include="Resources\Face\131.gif" />
+    <Content Include="Resources\Face\132.gif" />
+    <Content Include="Resources\Face\133.gif" />
+    <Content Include="Resources\Face\134.gif" />
+    <Content Include="Resources\Face\14.gif" />
+    <Content Include="Resources\Face\15.gif" />
+    <Content Include="Resources\Face\16.gif" />
+    <Content Include="Resources\Face\17.gif" />
+    <Content Include="Resources\Face\18.gif" />
+    <Content Include="Resources\Face\19.gif" />
+    <Content Include="Resources\Face\2.gif" />
+    <Content Include="Resources\Face\20.gif" />
+    <Content Include="Resources\Face\21.gif" />
+    <Content Include="Resources\Face\22.gif" />
+    <Content Include="Resources\Face\23.gif" />
+    <Content Include="Resources\Face\24.gif" />
+    <Content Include="Resources\Face\25.gif" />
+    <Content Include="Resources\Face\26.gif" />
+    <Content Include="Resources\Face\27.gif" />
+    <Content Include="Resources\Face\28.gif" />
+    <Content Include="Resources\Face\29.gif" />
+    <Content Include="Resources\Face\3.gif" />
+    <Content Include="Resources\Face\30.gif" />
+    <Content Include="Resources\Face\31.gif" />
+    <Content Include="Resources\Face\32.gif" />
+    <Content Include="Resources\Face\33.gif" />
+    <Content Include="Resources\Face\34.gif" />
+    <Content Include="Resources\Face\35.gif" />
+    <Content Include="Resources\Face\36.gif" />
+    <Content Include="Resources\Face\37.gif" />
+    <Content Include="Resources\Face\38.gif" />
+    <Content Include="Resources\Face\39.gif" />
+    <Content Include="Resources\Face\4.gif" />
+    <Content Include="Resources\Face\40.gif" />
+    <Content Include="Resources\Face\41.gif" />
+    <Content Include="Resources\Face\42.gif" />
+    <Content Include="Resources\Face\43.gif" />
+    <Content Include="Resources\Face\44.gif" />
+    <Content Include="Resources\Face\45.gif" />
+    <Content Include="Resources\Face\46.gif" />
+    <Content Include="Resources\Face\47.gif" />
+    <Content Include="Resources\Face\48.gif" />
+    <Content Include="Resources\Face\49.gif" />
+    <Content Include="Resources\Face\5.gif" />
+    <Content Include="Resources\Face\50.gif" />
+    <Content Include="Resources\Face\51.gif" />
+    <Content Include="Resources\Face\52.gif" />
+    <Content Include="Resources\Face\53.gif" />
+    <Content Include="Resources\Face\54.gif" />
+    <Content Include="Resources\Face\55.gif" />
+    <Content Include="Resources\Face\56.gif" />
+    <Content Include="Resources\Face\57.gif" />
+    <Content Include="Resources\Face\58.gif" />
+    <Content Include="Resources\Face\59.gif" />
+    <Content Include="Resources\Face\6.gif" />
+    <Content Include="Resources\Face\60.gif" />
+    <Content Include="Resources\Face\61.gif" />
+    <Content Include="Resources\Face\62.gif" />
+    <Content Include="Resources\Face\63.gif" />
+    <Content Include="Resources\Face\64.gif" />
+    <Content Include="Resources\Face\65.gif" />
+    <Content Include="Resources\Face\66.gif" />
+    <Content Include="Resources\Face\67.gif" />
+    <Content Include="Resources\Face\68.gif" />
+    <Content Include="Resources\Face\69.gif" />
+    <Content Include="Resources\Face\7.gif" />
+    <Content Include="Resources\Face\70.gif" />
+    <Content Include="Resources\Face\71.gif" />
+    <Content Include="Resources\Face\72.gif" />
+    <Content Include="Resources\Face\73.gif" />
+    <Content Include="Resources\Face\74.gif" />
+    <Content Include="Resources\Face\75.gif" />
+    <Content Include="Resources\Face\76.gif" />
+    <Content Include="Resources\Face\77.gif" />
+    <Content Include="Resources\Face\78.gif" />
+    <Content Include="Resources\Face\79.gif" />
+    <Content Include="Resources\Face\8.gif" />
+    <Content Include="Resources\Face\80.gif" />
+    <Content Include="Resources\Face\81.gif" />
+    <Content Include="Resources\Face\82.gif" />
+    <Content Include="Resources\Face\83.gif" />
+    <Content Include="Resources\Face\84.gif" />
+    <Content Include="Resources\Face\85.gif" />
+    <Content Include="Resources\Face\86.gif" />
+    <Content Include="Resources\Face\87.gif" />
+    <Content Include="Resources\Face\88.gif" />
+    <Content Include="Resources\Face\89.gif" />
+    <Content Include="Resources\Face\9.gif" />
+    <Content Include="Resources\Face\90.gif" />
+    <Content Include="Resources\Face\91.gif" />
+    <Content Include="Resources\Face\92.gif" />
+    <Content Include="Resources\Face\93.gif" />
+    <Content Include="Resources\Face\94.gif" />
+    <Content Include="Resources\Face\95.gif" />
+    <Content Include="Resources\Face\96.gif" />
+    <Content Include="Resources\Face\97.gif" />
+    <Content Include="Resources\Face\98.gif" />
+    <Content Include="Resources\Face\99.gif" />
+    <Content Include="Resources\Head\big194.png" />
+    <Content Include="Resources\Head\big194_100.gif" />
+    <Content Include="Resources\Head\big199.png" />
+    <Content Include="Resources\Ico\Iico.ico" />
+    <Content Include="Resources\Ico\Imessage.ico" />
+    <None Include="Resources\Skins\menu_bkg_check.png" />
+    <Content Include="Resources\Skins\allbtn_down.png" />
+    <Content Include="Resources\Skins\allbtn_highlight.png" />
+    <Content Include="Resources\Skins\All_down_arrow.png" />
+    <Content Include="Resources\Skins\All_iconbutton_highlightBackground.png" />
+    <Content Include="Resources\Skins\all_iconbutton_pushedBackground.png" />
+    <Content Include="Resources\Skins\btn_close_down.png" />
+    <Content Include="Resources\Skins\btn_close_highlight.png" />
+    <Content Include="Resources\Skins\btn_close_normal.png" />
+    <Content Include="Resources\Skins\btn_down.png" />
+    <Content Include="Resources\Skins\btn_down_arrow.png" />
+    <Content Include="Resources\Skins\btn_focus.png" />
+    <Content Include="Resources\Skins\btn_focus_arrow.png" />
+    <Content Include="Resources\Skins\btn_highlight.png" />
+    <Content Include="Resources\Skins\btn_highlight_arrow.png" />
+    <Content Include="Resources\Skins\btn_max_down.png" />
+    <Content Include="Resources\Skins\btn_max_highlight.png" />
+    <Content Include="Resources\Skins\btn_max_normal.png" />
+    <Content Include="Resources\Skins\btn_mini_down.png" />
+    <Content Include="Resources\Skins\btn_mini_highlight.png" />
+    <Content Include="Resources\Skins\btn_mini_normal.png" />
+    <Content Include="Resources\Skins\btn_normal.png" />
+    <Content Include="Resources\Skins\btn_normal_arrow.png" />
+    <Content Include="Resources\Skins\btn_restore_down.png" />
+    <Content Include="Resources\Skins\btn_restore_highlight.png" />
+    <Content Include="Resources\Skins\btn_restore_normal.png" />
+    <Content Include="Resources\Skins\cb_b_e.bmp" />
+    <Content Include="Resources\Skins\cb_b_l.bmp" />
+    <Content Include="Resources\Skins\cb_c_e.bmp" />
+    <Content Include="Resources\Skins\cb_c_l.png" />
+    <Content Include="Resources\Skins\cb_n_e.bmp" />
+    <Content Include="Resources\Skins\cb_n_l.png" />
+    <Content Include="Resources\Skins\ChatFrame_EditMsgFrame_background.bmp" />
+    <Content Include="Resources\Skins\ChatFrame_QQShow_background.png" />
+    <Content Include="Resources\Skins\ChatFrame_QuickbarFrame_background.bmp" />
+    <Content Include="Resources\Skins\ChatFrame_ShowMsgFrame_background.bmp" />
+    <Content Include="Resources\Skins\ChatFrame_splitter_button_highlightBackground.png" />
+    <Content Include="Resources\Skins\ChatFrame_Window_windowBkg.png" />
+    <Content Include="Resources\Skins\colour.png" />
+    <Content Include="Resources\Skins\combobox_buttonHighlightDraw.bmp" />
+    <Content Include="Resources\Skins\combobox_buttonNormalDraw.bmp" />
+    <Content Include="Resources\Skins\combobox_buttonPushedDraw.bmp" />
+    <Content Include="Resources\Skins\find.png" />
+    <Content Include="Resources\Skins\frameBorderEffect_mouseDownDraw.png" />
+    <Content Include="Resources\Skins\frameBorderEffect_normalDraw.png" />
+    <Content Include="Resources\Skins\friendGroupTitleOpenbg.png" />
+    <Content Include="Resources\Skins\friendTitlebg.png" />
+    <Content Include="Resources\Skins\friendTitleOpenbg.png" />
+    <Content Include="Resources\Skins\keyboard.png" />
+    <Content Include="Resources\Skins\login_btn_down.png" />
+    <Content Include="Resources\Skins\login_btn_focus.png" />
+    <Content Include="Resources\Skins\login_btn_highlight.png" />
+    <Content Include="Resources\Skins\login_btn_normal.png" />
+    <Content Include="Resources\Skins\login_inputbtn_down.bmp" />
+    <Content Include="Resources\Skins\login_inputbtn_highlight.bmp" />
+    <Content Include="Resources\Skins\login_inputbtn_normal.bmp" />
+    <Content Include="Resources\Skins\login_light_bkg.png" />
+    <Content Include="Resources\Skins\login_png_bkg.png" />
+    <Content Include="Resources\Skins\mail.png" />
+    <Content Include="Resources\Skins\MainBkg.png" />
+    <Content Include="Resources\Skins\MainPanel_ContactMainTabButton_texture.png" />
+    <Content Include="Resources\Skins\MainPanel_ContactMainTabButton_texture1.png" />
+    <Content Include="Resources\Skins\MainPanel_FolderNode_collapseTexture.png" />
+    <Content Include="Resources\Skins\MainPanel_FolderNode_collapseTextureHighlight.png" />
+    <Content Include="Resources\Skins\MainPanel_FolderNode_expandTexture.png" />
+    <Content Include="Resources\Skins\MainPanel_FolderNode_expandTextureHighlight.png" />
+    <Content Include="Resources\Skins\MainPanel_GroupMainTabButton_texture.png" />
+    <Content Include="Resources\Skins\MainPanel_GroupMainTabButton_texture1.png" />
+    <Content Include="Resources\Skins\MainPanel_RecentMainTabButton_texture.png" />
+    <Content Include="Resources\Skins\MainPanel_RecentMainTabButton_texture1.png" />
+    <Content Include="Resources\Skins\MainPanel_window_windowBkg.png" />
+    <Content Include="Resources\Skins\main_group_normal.png" />
+    <Content Include="Resources\Skins\main_png_bkg.png" />
+    <Content Include="Resources\Skins\main_search_bkg.png" />
+    <Content Include="Resources\Skins\main_tab_bkg.png" />
+    <Content Include="Resources\Skins\main_tab_check.bmp" />
+    <Content Include="Resources\Skins\main_tab_highlight.png" />
+    <Content Include="Resources\Skins\menu_bkg.png" />
+    <Content Include="Resources\Skins\menu_cutling.png" />
+    <Content Include="Resources\Skins\menu_highlight.png" />
+    <Content Include="Resources\Skins\message.png" />
+    <Content Include="Resources\Skins\mune_select_bkg.bmp" />
+    <Content Include="Resources\Skins\Padding4Normal.png" />
+    <Content Include="Resources\Skins\Padding4Press.png" />
+    <Content Include="Resources\Skins\Padding4Select.png" />
+    <Content Include="Resources\Skins\pic_defaultcolor_normal.png" />
+    <Content Include="Resources\Skins\rb_click.bmp" />
+    <Content Include="Resources\Skins\rb_click_move.bmp" />
+    <Content Include="Resources\Skins\rb_no.bmp" />
+    <Content Include="Resources\Skins\rb_no_move.bmp" />
+    <Content Include="Resources\Skins\RecentColorBkg.png" />
+    <Content Include="Resources\Skins\role_tabBtn_Focus.png" />
+    <Content Include="Resources\Skins\role_tabBtn_Normal.png" />
+    <Content Include="Resources\Skins\scrollbar_arrowdown_down.png" />
+    <Content Include="Resources\Skins\scrollbar_arrowdown_highlight.png" />
+    <Content Include="Resources\Skins\scrollbar_arrowdown_normal.png" />
+    <Content Include="Resources\Skins\scrollbar_arrowup_down.png" />
+    <Content Include="Resources\Skins\scrollbar_arrowup_highlight.png" />
+    <Content Include="Resources\Skins\scrollbar_arrowup_normal.png" />
+    <Content Include="Resources\Skins\scrollbar_bar_down.png" />
+    <Content Include="Resources\Skins\scrollbar_bar_highlight.png" />
+    <Content Include="Resources\Skins\scrollbar_bar_normal.png" />
+    <Content Include="Resources\Skins\scrollbar_bkg.png" />
+    <Content Include="Resources\Skins\setbar_btn_down.png" />
+    <Content Include="Resources\Skins\setbar_btn_highlight.png" />
+    <Content Include="Resources\Skins\setbar_btn_normal.png" />
+    <Content Include="Resources\Skins\set_line.png" />
+    <Content Include="Resources\Skins\ShadingBkg.png" />
+    <Content Include="Resources\Skins\shading_highlight.png" />
+    <Content Include="Resources\Skins\sysmessagebox_errorFile.png" />
+    <Content Include="Resources\Skins\sysmessagebox_inforFile.png" />
+    <Content Include="Resources\Skins\sysmessagebox_questionFile.png" />
+    <Content Include="Resources\Skins\sysmessagebox_warningFile.png" />
+    <Content Include="Resources\Skins\TbAdjustColorNormal.png" />
+    <Content Include="Resources\Skins\TbShadingNormal.png" />
+    <Content Include="Resources\Skins\Tools.png" />
+    <Content Include="Resources\Skins\Wireless.png" />
+    <Content Include="Resources\Skins\wite.gif" />
+    <Content Include="Resources\State\away.png" />
+    <Content Include="Resources\State\busy.png" />
+    <Content Include="Resources\State\imoffline.png" />
+    <Content Include="Resources\State\imonline.png" />
+    <Content Include="Resources\State\invisible.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C3A302A-04CB-4B9A-A58E-33C36789E63D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSS.IM.App</RootNamespace>
+    <AssemblyName>CSSIM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Iico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DirectShow">
+      <HintPath>..\..\Assembly\DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZipLib">
+      <HintPath>..\..\Assembly\ZipLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChatFromMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatFromMsg.designer.cs">
+      <DependentUpon>ChatFromMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatGroupFormMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatGroupFormMsg.Designer.cs">
+      <DependentUpon>ChatGroupFormMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatGroupRoomCrateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatGroupRoomCrateForm.Designer.cs">
+      <DependentUpon>ChatGroupRoomCrateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatGroupRoomSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatGroupRoomSetForm.Designer.cs">
+      <DependentUpon>ChatGroupRoomSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatGroupRoomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatGroupRoomsForm.Designer.cs">
+      <DependentUpon>ChatGroupRoomsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatMessageBox.Designer.cs">
+      <DependentUpon>ChatMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatsGroupPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatsGroupPasswordForm.Designer.cs">
+      <DependentUpon>ChatsGroupPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AVForm.Designer.cs">
+      <DependentUpon>AVForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InfoMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InfoMessage.designer.cs">
+      <DependentUpon>InfoMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\p2pFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\p2pFile.designer.cs">
+      <DependentUpon>p2pFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindFriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindFriendForm.Designer.cs">
+      <DependentUpon>FindFriendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrom.Designer.cs">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginWaiting.Designer.cs">
+      <DependentUpon>LoginWaiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxForm.Designer.cs">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageLogForm.Designer.cs">
+      <DependentUpon>MessageLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveFriendGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveFriendGroup.Designer.cs">
+      <DependentUpon>MoveFriendGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Red5Msg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Red5Msg.Designer.cs">
+      <DependentUpon>Red5Msg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemarkFriendGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemarkFriendGroup.Designer.cs">
+      <DependentUpon>RemarkFriendGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestFriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestFriendForm.Designer.cs">
+      <DependentUpon>RequestFriendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetInfoForm.Designer.cs">
+      <DependentUpon>SetInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetingForm.Designer.cs">
+      <DependentUpon>SetingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetingServerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetingServerInfo.Designer.cs">
+      <DependentUpon>SetingServerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Base64 .cs" />
+    <Compile Include="Settings\GetCert.cs" />
+    <Compile Include="Settings\HistoryLogin.cs" />
+    <Compile Include="Settings\HotKey.cs" />
+    <Compile Include="Settings\Login.cs" />
+    <Compile Include="Msg\MqMessage.cs" />
+    <Compile Include="Settings\SColor.cs" />
+    <Compile Include="Settings\ServerInfo.cs" />
+    <Compile Include="Settings\SFont.cs" />
+    <Compile Include="Settings\TUserRemark.cs" />
+    <Compile Include="Settings\Verify.cs" />
+    <Compile Include="Settings\Util.cs" />
+    <Compile Include="Settings\Paths.cs" />
+    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="VcardInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VcardInfoForm.designer.cs">
+      <DependentUpon>VcardInfoForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChatFromMsg.resx">
+      <DependentUpon>ChatFromMsg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatGroupFormMsg.resx">
+      <DependentUpon>ChatGroupFormMsg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatGroupRoomCrateForm.resx">
+      <DependentUpon>ChatGroupRoomCrateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatGroupRoomSetForm.resx">
+      <DependentUpon>ChatGroupRoomSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatGroupRoomsForm.resx">
+      <DependentUpon>ChatGroupRoomsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatMessageBox.resx">
+      <DependentUpon>ChatMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatsGroupPasswordForm.resx">
+      <DependentUpon>ChatsGroupPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AVForm.resx">
+      <DependentUpon>AVForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InfoMessage.resx">
+      <DependentUpon>InfoMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\p2pFile.resx">
+      <DependentUpon>p2pFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindFriendForm.resx">
+      <DependentUpon>FindFriendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrom.resx">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginWaiting.resx">
+      <DependentUpon>LoginWaiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxForm.resx">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageLogForm.resx">
+      <DependentUpon>MessageLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveFriendGroup.resx">
+      <DependentUpon>MoveFriendGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Red5Msg.resx">
+      <DependentUpon>Red5Msg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemarkFriendGroup.resx">
+      <DependentUpon>RemarkFriendGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestFriendForm.resx">
+      <DependentUpon>RequestFriendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetInfoForm.resx">
+      <DependentUpon>SetInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetingForm.resx">
+      <DependentUpon>SetingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetingServerInfo.resx">
+      <DependentUpon>SetingServerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VcardInfoForm.resx">
+      <DependentUpon>VcardInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSS.IM.Library\CSS.IM.Library.csproj">
+      <Project>{F684CBC3-8264-4BAE-9B75-E5F0DCF04C65}</Project>
+      <Name>CSS.IM.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSS.IM.UI\CSS.IM.UI.csproj">
+      <Project>{46ABA9D1-F40B-43EA-889E-4DCE8293E975}</Project>
+      <Name>CSS.IM.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSS.IM.XMPP\CSS.IM.XMPP.csproj">
+      <Project>{A2F3FA34-0F78-4106-A27A-0F4182AC03E9}</Project>
+      <Name>CSS.IM.XMPP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSSLog.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ISTask.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GetCert.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\ReceiveIco.jpg" />
+    <None Include="Resources\Iico.ico" />
+    <None Include="Sound\call.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Sound\folder.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Sound\Global.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Sound\InputAlert.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Sound\msg.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Sound\ring.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Sound\security.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Sound\system.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Axbsioav2Lib">
+      <Guid>{E2AFA656-4307-4D42-959E-1ABAD15D606D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="bsioav2Lib">
+      <Guid>{E2AFA656-4307-4D42-959E-1ABAD15D606D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CSSPCLIENTCOMLib">
+      <Guid>{06868BD8-224F-444C-80FB-705BE35C7CFD}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

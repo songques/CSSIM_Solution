@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F684CBC3-8264-4BAE-9B75-E5F0DCF04C65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSS.IM.Library</RootNamespace>
+    <AssemblyName>CSSIMLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DirectShow">
+      <HintPath>..\..\HuaSDKSolution\DirectShow\bin\Debug\DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZipLib">
+      <HintPath>..\..\..\Assembly\ZipLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AV\BaseClass\DrawDib.cs" />
+    <Compile Include="AV\BaseClass\G972.cs" />
+    <Compile Include="AV\BaseClass\ICM.cs" />
+    <Compile Include="AV\BaseClass\Mixer.cs" />
+    <Compile Include="AV\BaseClass\utiilities.cs" />
+    <Compile Include="AV\BaseClass\VideoCapturer.cs" />
+    <Compile Include="AV\BaseClass\VideoSize.cs" />
+    <Compile Include="AV\BaseClass\YV12TORGB24.cs" />
+    <Compile Include="AV\Controls\AudioCapturer.cs" />
+    <Compile Include="AV\Controls\AudioEncoder.cs" />
+    <Compile Include="AV\Controls\AudioRender.cs" />
+    <Compile Include="AV\Controls\AV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AV\Controls\AV.Designer.cs">
+      <DependentUpon>AV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AV\Controls\AVcommunication.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AV\Controls\AVcommunication.Designer.cs">
+      <DependentUpon>AVcommunication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AV\Controls\AVcommunicationEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AV\Controls\AVcommunicationEx.Designer.cs">
+      <DependentUpon>AVcommunicationEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AV\Controls\AVEX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AV\Controls\Capture.cs" />
+    <Compile Include="AV\Controls\VideoCapturer.cs" />
+    <Compile Include="AV\Controls\VideoEncoder.cs" />
+    <Compile Include="AV\Controls\VideoRender.cs" />
+    <Compile Include="AV\Media\AudioIn.cs" />
+    <Compile Include="AV\Media\AudioInDevice.cs" />
+    <Compile Include="AV\Media\AudioOut.cs" />
+    <Compile Include="AV\Media\AudioOutDevice.cs" />
+    <Compile Include="AV\Media\Codec\Audio\AudioCodec.cs" />
+    <Compile Include="AV\Media\Codec\Audio\G711_alaw.cs" />
+    <Compile Include="AV\Media\Codec\Audio\G711_ulaw.cs" />
+    <Compile Include="AV\Media\Codec\Codec.cs" />
+    <Compile Include="AV\Media\Wave\native\MMSYSERR.cs" />
+    <Compile Include="AV\Media\Wave\native\WavConstants.cs" />
+    <Compile Include="AV\Media\Wave\native\WAVEFORMATEX.cs" />
+    <Compile Include="AV\Media\Wave\native\WAVEHDR.cs" />
+    <Compile Include="AV\Media\Wave\native\WAVEOUTCAPS.cs" />
+    <Compile Include="AV\Media\Wave\native\WavFormat.cs" />
+    <Compile Include="AV\Media\Wave\native\WavMethods.cs" />
+    <Compile Include="AV\Media\Wave\WaveIn.cs" />
+    <Compile Include="AV\Media\Wave\WaveOut.cs" />
+    <Compile Include="AV\Media\Wave\WavInDevice.cs" />
+    <Compile Include="AV\Media\Wave\WavOutDevice.cs" />
+    <Compile Include="Class\Calculate.cs" />
+    <Compile Include="Class\DataArrivalEventArgs.cs" />
+    <Compile Include="Class\Department.cs" />
+    <Compile Include="Class\DNS.cs" />
+    <Compile Include="Class\FileTransmits.cs" />
+    <Compile Include="Class\Hasher.cs" />
+    <Compile Include="Class\IP.cs" />
+    <Compile Include="Class\MessageQueue.cs" />
+    <Compile Include="Class\Security.cs" />
+    <Compile Include="Class\TextEncoder.cs" />
+    <Compile Include="Class\UserInfo.cs" />
+    <Compile Include="Controls\Class\fileTransmitEvnetArgs.cs" />
+    <Compile Include="Controls\Class\FormAccess.cs" />
+    <Compile Include="Controls\p2pFileTransmit\FileVo.cs" />
+    <Compile Include="Controls\p2pFileTransmit\p2pFileTransmit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\p2pFileTransmit\p2pFileTransmit.designer.cs">
+      <DependentUpon>p2pFileTransmit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\p2pFileTransmit\p2pFileTransmitEX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\p2pFileTransmit\p2pFileTransmitEX.designer.cs">
+      <DependentUpon>p2pFileTransmitEX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProgressBar\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\CaptureImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\CaptureImageTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\CaptureImageTool.designer.cs">
+      <DependentUpon>CaptureImageTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\CaptureImageToolColorTable.cs" />
+    <Compile Include="Controls\ScreenCapture\ColorLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\ColorSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\ColorSelector.Designer.cs">
+      <DependentUpon>ColorSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\ControlPaintEx.cs" />
+    <Compile Include="Controls\ScreenCapture\DrawStyle.cs" />
+    <Compile Include="Controls\ScreenCapture\DrawTextData.cs" />
+    <Compile Include="Controls\ScreenCapture\DrawToolsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\DrawToolsControl.designer.cs">
+      <DependentUpon>DrawToolsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\DrawToolsDockStyle.cs" />
+    <Compile Include="Controls\ScreenCapture\FormCapture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ScreenCapture\GraphicsPathHelper.cs" />
+    <Compile Include="Controls\ScreenCapture\MFCAPI.cs" />
+    <Compile Include="Controls\ScreenCapture\NativeMethods.cs" />
+    <Compile Include="Controls\ScreenCapture\OperateManager.cs" />
+    <Compile Include="Controls\ScreenCapture\OperateObject.cs" />
+    <Compile Include="Controls\ScreenCapture\OperateType.cs" />
+    <Compile Include="Controls\ScreenCapture\RegionHelper.cs" />
+    <Compile Include="Controls\ScreenCapture\RoundStyle.cs" />
+    <Compile Include="Controls\ScreenCapture\SizeGrip.cs" />
+    <Compile Include="Controls\ScreenCapture\ToolStripRendererEx.cs" />
+    <Compile Include="Controls\TaskbarNotifier\TaskbarNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\UdpSendFile\BufferHelper.cs" />
+    <Compile Include="Controls\UdpSendFile\Command.cs" />
+    <Compile Include="Controls\UdpSendFile\ControlTag.cs" />
+    <Compile Include="Controls\UdpSendFile\FileReceiveBufferEvent.cs" />
+    <Compile Include="Controls\UdpSendFile\FileReceiveCompleteEvent.cs" />
+    <Compile Include="Controls\UdpSendFile\FileReceiveEvent.cs" />
+    <Compile Include="Controls\UdpSendFile\FileSendBufferEvent.cs" />
+    <Compile Include="Controls\UdpSendFile\FileSendEvent.cs" />
+    <Compile Include="Controls\UdpSendFile\IDataCell.cs" />
+    <Compile Include="Controls\UdpSendFile\LabelClickEvent.cs" />
+    <Compile Include="Controls\UdpSendFile\MD5Helper.cs" />
+    <Compile Include="Controls\UdpSendFile\ReadFileBufferEvent.cs" />
+    <Compile Include="Controls\UdpSendFile\ReadFileObject.cs" />
+    <Compile Include="Controls\UdpSendFile\ReceiveDataEvent.cs" />
+    <Compile Include="Controls\UdpSendFile\ReceiveFileManager.cs" />
+    <Compile Include="Controls\UdpSendFile\RequestSendFileEvent.cs" />
+    <Compile Include="Controls\UdpSendFile\ResponeTraFransfersFile.cs" />
+    <Compile Include="Controls\UdpSendFile\SendCell.cs" />
+    <Compile Include="Controls\UdpSendFile\SendFileManager.cs" />
+    <Compile Include="Controls\UdpSendFile\TraFransfersFile.cs" />
+    <Compile Include="Controls\UdpSendFile\TraFransfersFileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UdpSendFile\TraFransfersFileControl.designer.cs">
+      <DependentUpon>TraFransfersFileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UdpSendFile\TraFransfersFileLogEvent.cs" />
+    <Compile Include="Controls\UdpSendFile\TraFransfersFileStart.cs" />
+    <Compile Include="Controls\UdpSendFile\UdpPeer.cs" />
+    <Compile Include="Controls\UdpSendFile\UdpReceiveFile.cs" />
+    <Compile Include="Controls\UdpSendFile\UdpSendFile.cs" />
+    <Compile Include="Controls\WebFile\WebFile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WebFile\WebFile.designer.cs">
+      <DependentUpon>WebFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\OleDb.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="ExtRichTextBox\gifCollections.cs" />
+    <Compile Include="ExtRichTextBox\MFCAPI.cs" />
+    <Compile Include="ExtRichTextBox\MyGifPicture.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtRichTextBox\RichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="msgBytes\BitmapInfoHeader.cs" />
+    <Compile Include="msgBytes\ChangePassword.cs" />
+    <Compile Include="msgBytes\Dep.cs" />
+    <Compile Include="msgBytes\GroupInfo.cs" />
+    <Compile Include="msgBytes\LoginInfo.cs" />
+    <Compile Include="msgBytes\Msg.cs" />
+    <Compile Include="msgBytes\msgAV.cs" />
+    <Compile Include="msgBytes\msgFile.cs" />
+    <Compile Include="msgBytes\OnlineUser.cs" />
+    <Compile Include="msgBytes\Organization.cs" />
+    <Compile Include="msgBytes\UserBaseInfo.cs" />
+    <Compile Include="msgBytes\UserData.cs" />
+    <Compile Include="Net\FtpClient.cs" />
+    <Compile Include="Net\MyTcp.cs" />
+    <Compile Include="Net\SockTCPClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Net\SockTCPClient.designer.cs">
+      <DependentUpon>SockTCPClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Net\SockTCPServer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Net\SockTCPServer.designer.cs">
+      <DependentUpon>SockTCPServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Net\SockUDP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Net\SockUDP.designer.cs">
+      <DependentUpon>SockUDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Net\ZIP.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AV\BaseClass\DrawDib.resx">
+      <DependentUpon>DrawDib.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AV\BaseClass\ICM.resx">
+      <DependentUpon>ICM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AV\Controls\AV.resx">
+      <DependentUpon>AV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AV\Controls\AVcommunication.resx">
+      <DependentUpon>AVcommunication.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AV\Controls\AVcommunicationEx.resx">
+      <DependentUpon>AVcommunicationEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AV\Controls\AVEX.resx">
+      <DependentUpon>AVEX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\p2pFileTransmit\p2pFileTransmit.resx">
+      <DependentUpon>p2pFileTransmit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\p2pFileTransmit\p2pFileTransmitEX.resx">
+      <DependentUpon>p2pFileTransmitEX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScreenCapture\CaptureImageTool.resx">
+      <DependentUpon>CaptureImageTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScreenCapture\ColorSelector.resx">
+      <DependentUpon>ColorSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScreenCapture\DrawToolsControl.resx">
+      <DependentUpon>DrawToolsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScreenCapture\FormCapture.resx">
+      <DependentUpon>FormCapture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TaskbarNotifier\TaskbarNotifier.resx">
+      <DependentUpon>TaskbarNotifier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UdpSendFile\TraFransfersFileControl.resx">
+      <DependentUpon>TraFransfersFileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSS.IM.UI\CSS.IM.UI.csproj">
+      <Project>{46ABA9D1-F40B-43EA-889E-4DCE8293E975}</Project>
+      <Name>CSS.IM.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow_M.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text.ico" />
+    <None Include="Resources\Save.ico" />
+    <None Include="Resources\Redo.png" />
+    <None Include="Resources\Rectangular.ico" />
+    <None Include="Resources\Line.ico" />
+    <None Include="Resources\Exit.ico" />
+    <None Include="Resources\Ellipse.ico" />
+    <None Include="Resources\Arrow.ico" />
+    <None Include="Resources\Accept.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

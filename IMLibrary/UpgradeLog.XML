@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="IMLibrary">
+</Property><Property Name="解决方案文件" Value="C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\IMLibrary.sln">
+</Property><Property Name="用户选项文件" Value="C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\IMLibrary.suo">
+</Property><Property Name="Date" Value="2012年5月29日">
+</Property><Property Name="Time" Value="15:46">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="IMLibrary.sln" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\IMLibrary.sln">
+</Event><Event ErrorLevel="0" Project="" Source="IMLibrary.suo" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\IMLibrary.suo">
+</Event><Event ErrorLevel="0" Project="SqlData" Source="SqlData\SqlData.csproj" Description="项目文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\SqlData\SqlData.csproj">
+</Event><Event ErrorLevel="0" Project="SqlData" Source="SqlData\SqlData.csproj.user" Description="项目用户文件成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\SqlData\SqlData.csproj.user">
+</Event><Event ErrorLevel="0" Project="SqlData" Source="SqlData\DataAccess.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\SqlData\DataAccess.cs">
+</Event><Event ErrorLevel="0" Project="SqlData" Source="SqlData\DataAccessParameterCache.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\SqlData\DataAccessParameterCache.cs">
+</Event><Event ErrorLevel="0" Project="SqlData" Source="SqlData\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\SqlData\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="1" Project="SqlData" Source="SqlData\SqlData.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="SqlData" Source="SqlData\SqlData.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="SqlData" Source="SqlData\SqlData.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\IMLibrary.csproj" Description="项目文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\IMLibrary.csproj">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\IMLibrary.csproj.user" Description="项目用户文件成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\IMLibrary.csproj.user">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\BaseClass\DrawDib.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\BaseClass\DrawDib.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\BaseClass\G972.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\BaseClass\G972.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\BaseClass\ICM.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\BaseClass\ICM.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\BaseClass\Mixer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\BaseClass\Mixer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\BaseClass\utiilities.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\BaseClass\utiilities.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\BaseClass\VideoCapturer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\BaseClass\VideoCapturer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\BaseClass\VideoSize.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\BaseClass\VideoSize.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\BaseClass\YV12TORGB24.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\BaseClass\YV12TORGB24.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\AudioCapturer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\AudioCapturer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\AudioEncoder.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\AudioEncoder.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\AudioRender.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\AudioRender.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\AV.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\AV.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\AV.Designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\AV.Designer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\AVcommunication.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\AVcommunication.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\AVcommunication.Designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\AVcommunication.Designer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\VideoCapturer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\VideoCapturer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\VideoEncoder.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\VideoEncoder.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\VideoRender.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\VideoRender.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\AudioIn.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\AudioIn.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\AudioInDevice.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\AudioInDevice.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\AudioOut.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\AudioOut.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\AudioOutDevice.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\AudioOutDevice.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Codec\Audio\AudioCodec.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Codec\Audio\AudioCodec.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Codec\Audio\G711_alaw.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Codec\Audio\G711_alaw.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Codec\Audio\G711_ulaw.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Codec\Audio\G711_ulaw.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Codec\Codec.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Codec\Codec.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\native\MMSYSERR.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\native\MMSYSERR.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\native\WavConstants.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\native\WavConstants.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\native\WAVEFORMATEX.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\native\WAVEFORMATEX.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\native\WAVEHDR.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\native\WAVEHDR.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\native\WAVEOUTCAPS.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\native\WAVEOUTCAPS.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\native\WavFormat.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\native\WavFormat.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\native\WavMethods.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\native\WavMethods.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\WaveIn.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\WaveIn.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\WaveOut.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\WaveOut.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\WavInDevice.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\WavInDevice.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Media\Wave\WavOutDevice.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Media\Wave\WavOutDevice.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\Calculate.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\Calculate.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\DataArrivalEventArgs.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\DataArrivalEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\Department.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\Department.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\DNS.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\DNS.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\FileTransmits.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\FileTransmits.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\Hasher.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\Hasher.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\IP.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\IP.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\MessageQueue.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\MessageQueue.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\Security.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\Security.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\TextEncoder.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\TextEncoder.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Class\UserInfo.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Class\UserInfo.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\Class\fileTransmitEvnetArgs.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\Class\fileTransmitEvnetArgs.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\Class\FormAccess.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\Class\FormAccess.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\p2pFileTransmit\p2pFileTransmit.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\p2pFileTransmit\p2pFileTransmit.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\p2pFileTransmit\p2pFileTransmit.designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\p2pFileTransmit\p2pFileTransmit.designer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\ProgressBar\ProgressBar.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\ProgressBar\ProgressBar.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\ScreenCapture\FormCapture.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\ScreenCapture\FormCapture.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\ScreenCapture\MFCAPI.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\ScreenCapture\MFCAPI.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\TaskbarNotifier\TaskbarNotifier.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\TaskbarNotifier\TaskbarNotifier.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\WebFile\WebFile.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\WebFile\WebFile.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\WebFile\WebFile.designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\WebFile\WebFile.designer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Data\OleDb.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Data\OleDb.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Enum.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Enum.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\ExtRichTextBox\gifCollections.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\ExtRichTextBox\gifCollections.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\ExtRichTextBox\MFCAPI.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\ExtRichTextBox\MFCAPI.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\ExtRichTextBox\MyGifPicture.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\ExtRichTextBox\MyGifPicture.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\ExtRichTextBox\RichTextBox.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\ExtRichTextBox\RichTextBox.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\BitmapInfoHeader.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\BitmapInfoHeader.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\ChangePassword.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\ChangePassword.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\Dep.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\Dep.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\GroupInfo.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\GroupInfo.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\LoginInfo.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\LoginInfo.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\Msg.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\Msg.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\msgAV.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\msgAV.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\msgFile.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\msgFile.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\OnlineUser.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\OnlineUser.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\UserBaseInfo.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\UserBaseInfo.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\Organization.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\Organization.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\msgBytes\UserData.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\msgBytes\UserData.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Net\MyTcp.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Net\MyTcp.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Net\SockTCPClient.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Net\SockTCPClient.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Net\SockTCPClient.designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Net\SockTCPClient.designer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Net\SockTCPServer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Net\SockTCPServer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Net\SockTCPServer.designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Net\SockTCPServer.designer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Net\SockUDP.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Net\SockUDP.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Net\SockUDP.designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Net\SockUDP.designer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Properties\Resource.Designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Properties\Resource.Designer.cs">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Resources\close.bmp" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Resources\close.bmp">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Resources\close2.bmp" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Resources\close2.bmp">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Resources\skin.bmp" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Resources\skin.bmp">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Resources\skin2.bmp" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Resources\skin2.bmp">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Resources\skin3.bmp" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Resources\skin3.bmp">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\BaseClass\DrawDib.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\BaseClass\DrawDib.resx">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\BaseClass\ICM.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\BaseClass\ICM.resx">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\AV.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\AV.resx">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\AV\Controls\AVcommunication.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\AV\Controls\AVcommunication.resx">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\p2pFileTransmit\p2pFileTransmit.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\p2pFileTransmit\p2pFileTransmit.resx">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\ScreenCapture\FormCapture.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\ScreenCapture\FormCapture.resx">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Controls\TaskbarNotifier\TaskbarNotifier.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Controls\TaskbarNotifier\TaskbarNotifier.resx">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\Properties\Resource.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\IMLibrary2\IMLibrary\Backup\Class\Properties\Resource.resx">
+</Event><Event ErrorLevel="1" Project="IMLibrary" Source="Class\IMLibrary.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\IMLibrary.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="IMLibrary" Source="Class\IMLibrary.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="IMLibrary.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="IMLibrary.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlData" Source="SqlData\SqlData.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="IMLibrary" Source="Class\IMLibrary.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>
