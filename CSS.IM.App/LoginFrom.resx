@@ -124,8 +124,8 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAXoAAADsCAIAAAD1ivotAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOugAA
-        DroBFb820gAA/3lJREFUeF5svQWcFFf2vs+6xJ3g7u6uAzMwMLhrEhLi2WzcE6IQSEhCHHd3d3fGXXt6
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOuQAA
+        DrkBuAYXvwAA/3lJREFUeF5svQWcFFf2vs+6xJ3g7u6uAzMwMLhrEhLi2WzcE6IQSEhCHHd3d3fGXXt6
         3LEQ3c3/OfftLvjt95/P3drb1dVV1cPcZ97znnNv/eHYucT//Oc/f/3r33/++ef//ve/f/7zn//yl7/8
         /vvvf/jDH3j5xz/+kXfZ0q9UqRJb9tPhP47hJQez5Rj281n67Kfzyy+/sGXnH37X4ZXsg3/8w3/tc7//
         5U9//PXX/3BA4IN//NOvv/76pz/96Q9/+qM+yDF85I9//hMdjvnLn+zMtqfSH3777Tc6f/vb3+xaf6jE
@@ -3192,12 +3192,4 @@
   <metadata name="QQcm_menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>345, 17</value>
   </metadata>
-  <data name="ax_bs.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAJQAAAAIB
-        AAAAAQAAAAAAAAAAAAAAABAAAAAAAAEA0wMAAOUCAAAAAAAACw==
-</value>
-  </data>
 </root>
