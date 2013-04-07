@@ -12,13 +12,25 @@ namespace CSS.IM.UI.Control
     {
         private Bitmap bmp;
 
-        [DllImport("user32.dll", EntryPoint = "SendMessageA")]
-        private static extern int SendMessage(IntPtr hwnd, int wMsg, IntPtr wParam, object lParam);
+        public struct COPYDATASTRUCT
+        {
+            public IntPtr dwData;
+            public int cbData;
+            [MarshalAs(UnmanagedType.LPStr)]
+            public string lpData;
 
-        [DllImport("user32")]
+        }
+
+        //[DllImport("user32.dll", EntryPoint = "SendMessageA")]
+        //private static extern int SendMessage(IntPtr hwnd, int wMsg, IntPtr wParam, object lParam);
+
+        [DllImport("User32.dll", EntryPoint = "SendMessage")]
+        private static extern int SendMessage(IntPtr intPtr, int WM_ERASEBKGND, IntPtr hDC, ref COPYDATASTRUCT cds);
+
+        [DllImport("user32.dll", EntryPoint = "GetWindowDC", CallingConvention = CallingConvention.Winapi)]
         private static extern IntPtr GetWindowDC(IntPtr hWnd);
 
-        [DllImport("user32")]
+        [DllImport("user32.dll", EntryPoint = "ReleaseDC", CallingConvention = CallingConvention.Winapi)]
         private static extern int ReleaseDC(IntPtr hWnd, IntPtr hDC);
 
         const int WM_ERASEBKGND = 0x14;
@@ -33,6 +45,7 @@ namespace CSS.IM.UI.Control
         private Pen BorderPenControl = new Pen(SystemColors.ControlDark, 0);
         private bool DroppedDown = false;
         private int InvalidateSince = 0;
+        COPYDATASTRUCT cds;
         //private static int DropDownButtonWidth = 17;
 
         /// <summary>
@@ -75,6 +88,9 @@ namespace CSS.IM.UI.Control
         public DateTimePickerEx()
             : base()
         {
+            cds.dwData = (IntPtr)0;
+            cds.lpData = null;
+            cds.cbData = -1;
             bmp = ResClass.GetImgRes("frameBorderEffect_normalDraw");
             this.SetStyle(ControlStyles.DoubleBuffer, true);
             this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
@@ -94,9 +110,9 @@ namespace CSS.IM.UI.Control
                 case WM_NC_PAINT:
                     hDC = GetWindowDC(m.HWnd);
                     gdc = System.Drawing.Graphics.FromHdc(hDC);
-                    SendMessage(this.Handle, WM_ERASEBKGND, hDC, 0);
+                    SendMessage(this.Handle, WM_ERASEBKGND, hDC, ref cds);
                     SendPrintClientMsg();
-                    SendMessage(this.Handle, WM_PAINT, IntPtr.Zero, 0);
+                    SendMessage(this.Handle, WM_PAINT, IntPtr.Zero, ref cds);
                     OverrideControlBorder(gdc);
                     m.Result = (IntPtr)1;	// indicate msg has been processed
                     ReleaseDC(m.HWnd, hDC);
@@ -139,12 +155,13 @@ namespace CSS.IM.UI.Control
             System.GC.Collect();
         }
 
+
         private void SendPrintClientMsg()
         {
             // We send this message for the control to redraw the client area
             System.Drawing.Graphics gClient = this.CreateGraphics();
             IntPtr ptrClientDC = gClient.GetHdc();
-            SendMessage(this.Handle, WM_PRINTCLIENT, ptrClientDC, 0);
+            SendMessage(this.Handle, WM_PRINTCLIENT, ptrClientDC, ref cds);
             gClient.ReleaseHdc(ptrClientDC);
             gClient.Dispose();
             System.GC.Collect();
@@ -179,7 +196,7 @@ namespace CSS.IM.UI.Control
             }
             else
             {
-                 bmp = ResClass.GetImgRes("frameBorderEffect_mouseDownDraw");
+                bmp = ResClass.GetImgRes("frameBorderEffect_mouseDownDraw");
                 //g.DrawRectangle(BorderPen, new Rectangle(0, 0, this.Width, this.Height));
                 g.DrawImage(bmp, new Rectangle(0, 0, 4, 4), 0, 0, 4, 4, GraphicsUnit.Pixel);
                 g.DrawImage(bmp, new Rectangle(4, 0, this.Width - 8, 4), 4, 0, bmp.Width - 8, 4, GraphicsUnit.Pixel);
@@ -193,7 +210,7 @@ namespace CSS.IM.UI.Control
                 g.DrawImage(bmp, new Rectangle(this.Width - 2, this.Height - 2, 2, 2), bmp.Width - 2, bmp.Height - 2, 2, 2, GraphicsUnit.Pixel);
             }
             System.GC.Collect();
-            
+
         }
 
         protected override void OnDropDown(EventArgs eventargs)
