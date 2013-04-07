@@ -251,7 +251,7 @@
             this.MinimizeBox = false;
             this.Name = "LoginFrom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CSS&IM";
+            this.Text = "办公助手";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginFrom_FormClosed);
             this.Load += new System.EventHandler(this.LoginFrom_Load);
             this.Controls.SetChildIndex(this.ButtonClose, 0);

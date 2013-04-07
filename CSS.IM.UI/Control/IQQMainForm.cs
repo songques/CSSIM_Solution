@@ -46,7 +46,7 @@ namespace CSS.IM.UI.Control
             get { return _NikeName; }
             set { _NikeName = value; this.Invalidate(); }
         }
-        
+
         #endregion
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace CSS.IM.UI.Control
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (f!=null)
+            if (f != null)
             {
                 f.Dispose();
                 f = null;
@@ -67,7 +67,7 @@ namespace CSS.IM.UI.Control
                 titleColor = null;
             }
 
-            if (HeadBmp!=null)
+            if (HeadBmp != null)
             {
                 HeadBmp.Dispose();
                 HeadBmp = null;
@@ -117,7 +117,7 @@ namespace CSS.IM.UI.Control
 
         public IQQMainForm()
         {
-            
+
             if (Environment.OSVersion.Version.Major >= 6)
             {
                 this.Font = new Font("微软雅黑", 9F, FontStyle.Regular);
@@ -244,15 +244,14 @@ namespace CSS.IM.UI.Control
             g.DrawImage(Bmp, new Rectangle(5, 0, this.Width - 10, 121), 10, 5, Bmp.Width - 20, 121, GraphicsUnit.Pixel);
             g.DrawImage(Bmp, new Rectangle(this.Width - 5, 0, 5, 121), Bmp.Width - 10, 5, 5, 121, GraphicsUnit.Pixel);
 
-            g.DrawImage(Bmp, new Rectangle(0, 121, 2, this.Height - 182), 5, 126, 2, Bmp.Height - 192, GraphicsUnit.Pixel);
+            g.DrawImage(Bmp, new Rectangle(0, 121, 2, this.Height - 156), 5, 126, 2, Bmp.Height - 192, GraphicsUnit.Pixel);
             //g.FillRectangle(Brushes.White, 2, 121, this.Width - 4, this.Height - 182);
             //g.DrawImage(Bmp, new Rectangle(2, 121, this.Width - 4, this.Height - 182), 7, 126, Bmp.Width - 14, Bmp.Height - 192, GraphicsUnit.Pixel);
-            g.DrawImage(Bmp, new Rectangle(this.Width - 2, 121, 2, this.Height - 182), Bmp.Width - 7, 126, 2, Bmp.Height - 192, GraphicsUnit.Pixel);
+            g.DrawImage(Bmp, new Rectangle(this.Width - 2, 121, 2, this.Height - 156), Bmp.Width - 7, 126, 2, Bmp.Height - 192, GraphicsUnit.Pixel);
 
-
-            g.DrawImage(Bmp, new Rectangle(0, this.Height - 61, 5, 61), 5, Bmp.Height - 66, 5, 61, GraphicsUnit.Pixel);
-            g.DrawImage(Bmp, new Rectangle(5, this.Height - 61, this.Width - 10, 61), 10, Bmp.Height - 66, Bmp.Width - 20, 61, GraphicsUnit.Pixel);
-            g.DrawImage(Bmp, new Rectangle(this.Width - 5, this.Height - 61, 5, 61), Bmp.Width - 10, Bmp.Height - 66, 5, 61, GraphicsUnit.Pixel);
+            g.DrawImage(Bmp, new Rectangle(0, this.Height - 35, 5, 35), 5, Bmp.Height - 40, 5, 35, GraphicsUnit.Pixel);
+            g.DrawImage(Bmp, new Rectangle(5, this.Height - 35, this.Width - 10, 35), 10, Bmp.Height - 40, Bmp.Width - 20, 35, GraphicsUnit.Pixel);
+            g.DrawImage(Bmp, new Rectangle(this.Width - 5, this.Height - 35, 5, 35), Bmp.Width - 10, Bmp.Height - 40, 5, 35, GraphicsUnit.Pixel);
 
 
             if (HeadBmp == null)
@@ -268,15 +267,15 @@ namespace CSS.IM.UI.Control
             g.DrawImage(HeadBmp, new Rectangle(this.Width - 80, 0, 80, 100), HeadBmp.Width - 80, 0, 80, 100, GraphicsUnit.Pixel, imageAttr);
 
 
-            g.DrawString(this.Text, f, titleColor, 10, 3);
+            g.DrawString(this.Text, f, titleColor, 10, 10);
             g.DrawString(NikeName, new Font(Font.FontFamily, 10F, FontStyle.Bold), titleColor, 90, 34);
 
-            
 
-            //Bmp = ResClass.GetImgRes("main_search_bkg");
-            //g.DrawImage(Bmp, new Rectangle(2, 99, 9, Bmp.Height), 0, 0, 9, Bmp.Height, GraphicsUnit.Pixel);
-            //g.DrawImage(Bmp, new Rectangle(11, 99, this.Width - 22, Bmp.Height), 9, 0, Bmp.Width - 18, Bmp.Height, GraphicsUnit.Pixel);
-            //g.DrawImage(Bmp, new Rectangle(this.Width - 11, 99, 9, Bmp.Height), Bmp.Width - 9, 0, 9, Bmp.Height, GraphicsUnit.Pixel);
+
+            Bmp = ResClass.GetImgRes("main_search_bkg");
+            g.DrawImage(Bmp, new Rectangle(2, 99, 9, Bmp.Height), 0, 0, 9, Bmp.Height, GraphicsUnit.Pixel);
+            g.DrawImage(Bmp, new Rectangle(11, 99, this.Width - 22, Bmp.Height), 9, 0, Bmp.Width - 18, Bmp.Height, GraphicsUnit.Pixel);
+            g.DrawImage(Bmp, new Rectangle(this.Width - 11, 99, 9, Bmp.Height), Bmp.Width - 9, 0, 9, Bmp.Height, GraphicsUnit.Pixel);
         }
 
         private void ResizeControl()
@@ -626,7 +625,7 @@ namespace CSS.IM.UI.Control
                     Win32.PostMessage(this.Handle, Win32.WM_SYSCOMMAND, Win32.SC_MINIMIZE, 0);
                 }
             }
-            if (CloseEvent!=null)
+            if (CloseEvent != null)
             {
                 CloseEvent();
             }

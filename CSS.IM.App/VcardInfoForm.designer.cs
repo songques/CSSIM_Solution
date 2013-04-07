@@ -169,7 +169,7 @@
             // btn_save
             // 
             this.btn_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_save.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.btn_save.Font = new System.Drawing.Font("宋体", 9F);
             this.btn_save.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_save.Location = new System.Drawing.Point(474, 394);
             this.btn_save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -182,7 +182,7 @@
             // btn_close
             // 
             this.btn_close.BackColor = System.Drawing.Color.Transparent;
-            this.btn_close.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.btn_close.Font = new System.Drawing.Font("宋体", 9F);
             this.btn_close.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_close.Location = new System.Drawing.Point(385, 394);
             this.btn_close.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -194,11 +194,17 @@
             // 
             // txt_bar
             // 
-            this.txt_bar.ReadOn = true;
+            this.txt_bar.BackColor = System.Drawing.Color.Transparent;
+            this.txt_bar.IsFocused = false;
+            this.txt_bar.IsPass = false;
             this.txt_bar.Location = new System.Drawing.Point(82, 110);
+            this.txt_bar.MaxLength = 32767;
+            this.txt_bar.Multi = false;
             this.txt_bar.Name = "txt_bar";
-            this.txt_bar.Size = new System.Drawing.Size(160, 21);
+            this.txt_bar.ReadOn = true;
+            this.txt_bar.Size = new System.Drawing.Size(160, 23);
             this.txt_bar.TabIndex = 4;
+            this.txt_bar.Texts = "";
             // 
             // panel_function
             // 
@@ -213,7 +219,7 @@
             // btn_basic
             // 
             this.btn_basic.BackColor = System.Drawing.Color.Transparent;
-            this.btn_basic.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.btn_basic.Font = new System.Drawing.Font("宋体", 9F);
             this.btn_basic.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_basic.Location = new System.Drawing.Point(3, 124);
             this.btn_basic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -226,7 +232,7 @@
             // btn_basicext
             // 
             this.btn_basicext.BackColor = System.Drawing.Color.Transparent;
-            this.btn_basicext.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.btn_basicext.Font = new System.Drawing.Font("宋体", 9F);
             this.btn_basicext.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_basicext.Location = new System.Drawing.Point(3, 154);
             this.btn_basicext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -339,7 +345,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 15;
-            this.label8.Text = "电    话";
+            this.label8.Text = "工作电话";
             // 
             // txt_fox
             // 
@@ -431,7 +437,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 12);
             this.label12.TabIndex = 17;
-            this.label12.Text = "部    门";
+            this.label12.Text = "办 公 室";
             // 
             // panel_basice
             // 
@@ -682,25 +688,25 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 420);
+            this.Controls.Add(this.panel_basice);
+            this.Controls.Add(this.panel_extend);
             this.Controls.Add(this.pic_top);
             this.Controls.Add(this.panel_function);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_close);
-            this.Controls.Add(this.panel_extend);
-            this.Controls.Add(this.panel_basice);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "VcardInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "名片资料";
             this.Load += new System.EventHandler(this.SetInfoForm_Load);
-            this.Controls.SetChildIndex(this.panel_basice, 0);
-            this.Controls.SetChildIndex(this.panel_extend, 0);
             this.Controls.SetChildIndex(this.ButtonClose, 0);
             this.Controls.SetChildIndex(this.btn_close, 0);
             this.Controls.SetChildIndex(this.btn_save, 0);
             this.Controls.SetChildIndex(this.panel_function, 0);
             this.Controls.SetChildIndex(this.pic_top, 0);
+            this.Controls.SetChildIndex(this.panel_extend, 0);
+            this.Controls.SetChildIndex(this.panel_basice, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_top)).EndInit();
             this.panel_function.ResumeLayout(false);

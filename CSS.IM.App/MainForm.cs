@@ -112,8 +112,9 @@ namespace CSS.IM.App
             btn_tools.Image = ResClass.GetImgRes("Tools");
             btn_message.Image = ResClass.GetImgRes("message");
             btn_find.Image = ResClass.GetImgRes("find");
-            panel_fd.Location = panel_gp.Location = panel_nt.Location = panel_lt.Location = new Point(2, 127);
-            panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, this.Height - 211 + 50);
+            panel_fd.Location = panel_gp.Location = panel_nt.Location = panel_lt.Location = new Point(2, 150);
+            panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, this.Height - 235 + 50);
+            //panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, 100);
             listView_fd.Size = panel_fd.Size;
         }
 
@@ -242,8 +243,10 @@ namespace CSS.IM.App
             btn_lt.Left = btn_nt.Left + btn_nt.Width;
             btn_lt.Width = Width - btn_lt.Left - 2;
             //search_Btn.Left = Width - search_Btn.Width - 3;
-            panel_fd.Location = panel_gp.Location = panel_nt.Location = panel_lt.Location = new Point(2, 127);
-            panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, this.Height - 211 + 50);
+            panel_fd.Location = panel_gp.Location = panel_nt.Location = panel_lt.Location = new Point(2, 150);
+            //panel_fd.Location = panel_gp.Location = panel_nt.Location = panel_lt.Location = new Point(2, 127);
+            panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, this.Height - 235 + 50);
+            //panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, this.Height - 211 + 50);
             listView_fd.Size = panel_fd.Size;
             //friendListView.Size = groupListView.Size = pal_tree.Size = lastListView.Size = new Size(this.Width - 4, this.Height - 211);//设置 好友列表区的大小
             //menu_Btn.Top = Height - menu_Btn.Height - 10;

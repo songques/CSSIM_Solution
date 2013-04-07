@@ -168,8 +168,8 @@
             // description
             // 
             this.description.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.description.BackColor = System.Drawing.Color.Transparent;
             this.description.Location = new System.Drawing.Point(59, 58);
             this.description.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -182,7 +182,7 @@
             // 
             this.btn_lt.BackColor = System.Drawing.Color.Transparent;
             this.btn_lt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_lt.BackgroundImage")));
-            this.btn_lt.Location = new System.Drawing.Point(179, 100);
+            this.btn_lt.Location = new System.Drawing.Point(179, 124);
             this.btn_lt.Name = "btn_lt";
             this.btn_lt.SelectTab = false;
             this.btn_lt.Size = new System.Drawing.Size(59, 27);
@@ -195,7 +195,7 @@
             // 
             this.btn_nt.BackColor = System.Drawing.Color.Transparent;
             this.btn_nt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_nt.BackgroundImage")));
-            this.btn_nt.Location = new System.Drawing.Point(120, 100);
+            this.btn_nt.Location = new System.Drawing.Point(120, 124);
             this.btn_nt.Name = "btn_nt";
             this.btn_nt.SelectTab = false;
             this.btn_nt.Size = new System.Drawing.Size(59, 27);
@@ -208,7 +208,7 @@
             // 
             this.btn_gp.BackColor = System.Drawing.Color.Transparent;
             this.btn_gp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_gp.BackgroundImage")));
-            this.btn_gp.Location = new System.Drawing.Point(61, 100);
+            this.btn_gp.Location = new System.Drawing.Point(61, 124);
             this.btn_gp.Name = "btn_gp";
             this.btn_gp.SelectTab = false;
             this.btn_gp.Size = new System.Drawing.Size(59, 27);
@@ -221,7 +221,7 @@
             // 
             this.btn_fd.BackColor = System.Drawing.Color.Transparent;
             this.btn_fd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_fd.BackgroundImage")));
-            this.btn_fd.Location = new System.Drawing.Point(2, 100);
+            this.btn_fd.Location = new System.Drawing.Point(2, 124);
             this.btn_fd.Name = "btn_fd";
             this.btn_fd.SelectTab = false;
             this.btn_fd.Size = new System.Drawing.Size(59, 27);
@@ -234,7 +234,7 @@
             // 
             this.btn_find.BackColor = System.Drawing.Color.Transparent;
             this.btn_find.Image = ((System.Drawing.Image)(resources.GetObject("btn_find.Image")));
-            this.btn_find.Location = new System.Drawing.Point(56, 433);
+            this.btn_find.Location = new System.Drawing.Point(56, 457);
             this.btn_find.Name = "btn_find";
             this.btn_find.Size = new System.Drawing.Size(22, 22);
             this.btn_find.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -247,7 +247,7 @@
             // 
             this.btn_message.BackColor = System.Drawing.Color.Transparent;
             this.btn_message.Image = ((System.Drawing.Image)(resources.GetObject("btn_message.Image")));
-            this.btn_message.Location = new System.Drawing.Point(31, 433);
+            this.btn_message.Location = new System.Drawing.Point(31, 457);
             this.btn_message.Name = "btn_message";
             this.btn_message.Size = new System.Drawing.Size(22, 22);
             this.btn_message.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -260,7 +260,7 @@
             // 
             this.btn_tools.BackColor = System.Drawing.Color.Transparent;
             this.btn_tools.Image = ((System.Drawing.Image)(resources.GetObject("btn_tools.Image")));
-            this.btn_tools.Location = new System.Drawing.Point(6, 433);
+            this.btn_tools.Location = new System.Drawing.Point(6, 457);
             this.btn_tools.Name = "btn_tools";
             this.btn_tools.Size = new System.Drawing.Size(22, 22);
             this.btn_tools.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -273,7 +273,7 @@
             // 
             this.panel_fd.BackColor = System.Drawing.Color.White;
             this.panel_fd.Controls.Add(this.listView_fd);
-            this.panel_fd.Location = new System.Drawing.Point(2, 127);
+            this.panel_fd.Location = new System.Drawing.Point(2, 151);
             this.panel_fd.Name = "panel_fd";
             this.panel_fd.Size = new System.Drawing.Size(25, 303);
             this.panel_fd.TabIndex = 66;
@@ -302,7 +302,7 @@
             // 
             this.panel_gp.BackColor = System.Drawing.Color.White;
             this.panel_gp.Controls.Add(this.listView_gp);
-            this.panel_gp.Location = new System.Drawing.Point(28, 127);
+            this.panel_gp.Location = new System.Drawing.Point(28, 151);
             this.panel_gp.Name = "panel_gp";
             this.panel_gp.Size = new System.Drawing.Size(25, 303);
             this.panel_gp.TabIndex = 67;
@@ -323,7 +323,7 @@
             // 
             this.panel_nt.BackColor = System.Drawing.Color.White;
             this.panel_nt.Controls.Add(this.treeView_nt);
-            this.panel_nt.Location = new System.Drawing.Point(54, 127);
+            this.panel_nt.Location = new System.Drawing.Point(54, 151);
             this.panel_nt.Name = "panel_nt";
             this.panel_nt.Size = new System.Drawing.Size(25, 303);
             this.panel_nt.TabIndex = 67;
@@ -389,7 +389,7 @@
             // 
             this.panel_lt.BackColor = System.Drawing.Color.White;
             this.panel_lt.Controls.Add(this.chatHistory_lt);
-            this.panel_lt.Location = new System.Drawing.Point(80, 127);
+            this.panel_lt.Location = new System.Drawing.Point(80, 151);
             this.panel_lt.Name = "panel_lt";
             this.panel_lt.Size = new System.Drawing.Size(25, 303);
             this.panel_lt.TabIndex = 67;
@@ -573,7 +573,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(240, 463);
+            this.ClientSize = new System.Drawing.Size(240, 492);
             this.Controls.Add(this.btn_color);
             this.Controls.Add(this.panel_lt);
             this.Controls.Add(this.panel_nt);
@@ -593,7 +593,7 @@
             this.Controls.Add(this.description);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "CSS&IM";
+            this.Text = "办公助手";
             this.CloseEvent += new CSS.IM.UI.Control.IQQMainForm.CloseEventDelegate(this.MainForm_CloseEvent);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Controls.SetChildIndex(this.description, 0);

@@ -141,6 +141,11 @@ namespace CSS.IM.App
 
             btn_login.Enabled = true;
             btn_setings.Enabled = true;
+
+            if (chb_autu.Checked)
+            {
+                timer_keyLogin.Enabled = true;
+            }
         }
 
         private void llab_regedit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -287,6 +292,7 @@ namespace CSS.IM.App
             }
 
             Util.RunWhenStart(CSS.IM.UI.Util.Path.Initial, "CSS&IM", Application.StartupPath + @"\CSSIM.exe");
+
 
             /*key验证杜宾用*/
             //try

@@ -173,7 +173,7 @@
             // btn_save
             // 
             this.btn_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_save.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.btn_save.Font = new System.Drawing.Font("宋体", 9F);
             this.btn_save.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_save.Location = new System.Drawing.Point(474, 394);
             this.btn_save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -186,7 +186,7 @@
             // btn_close
             // 
             this.btn_close.BackColor = System.Drawing.Color.Transparent;
-            this.btn_close.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.btn_close.Font = new System.Drawing.Font("宋体", 9F);
             this.btn_close.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_close.Location = new System.Drawing.Point(385, 394);
             this.btn_close.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -230,7 +230,7 @@
             // btn_basic
             // 
             this.btn_basic.BackColor = System.Drawing.Color.Transparent;
-            this.btn_basic.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.btn_basic.Font = new System.Drawing.Font("宋体", 9F);
             this.btn_basic.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_basic.Location = new System.Drawing.Point(3, 124);
             this.btn_basic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -243,7 +243,7 @@
             // btn_basicext
             // 
             this.btn_basicext.BackColor = System.Drawing.Color.Transparent;
-            this.btn_basicext.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.btn_basicext.Font = new System.Drawing.Font("宋体", 9F);
             this.btn_basicext.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_basicext.Location = new System.Drawing.Point(3, 154);
             this.btn_basicext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -355,7 +355,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 15;
-            this.label8.Text = "电    话";
+            this.label8.Text = "工作电话";
             // 
             // txt_fox
             // 
@@ -447,7 +447,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 12);
             this.label12.TabIndex = 17;
-            this.label12.Text = "部    门";
+            this.label12.Text = "办 公 室";
             // 
             // panel_basice
             // 

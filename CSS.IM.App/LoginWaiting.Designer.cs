@@ -57,8 +57,7 @@
             this.MinimizeBox = false;
             this.Name = "LoginWaiting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CSS&IM";
-     
+            this.Text = "办公助手";
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.ButtonClose, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).EndInit();
