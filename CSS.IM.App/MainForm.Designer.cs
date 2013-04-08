@@ -91,6 +91,7 @@
             this.退出ToolStripMenuItem = new CSS.IM.UI.Control.QQToolStripMenuItem();
             this.timer_MessageAlert = new System.Windows.Forms.Timer(this.components);
             this.btn_color = new CSS.IM.UI.Control.BarImageButton();
+            this.basicTextBox1 = new CSS.IM.UI.Control.BasicTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_mail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_default_index)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userImg)).BeginInit();
@@ -168,8 +169,8 @@
             // description
             // 
             this.description.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.description.BackColor = System.Drawing.Color.Transparent;
             this.description.Location = new System.Drawing.Point(59, 58);
             this.description.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -353,27 +354,27 @@
             this.tsmi发送消息,
             this.tsmi查看信息});
             this.treeView_nt_Menu.Name = "nContextMenu1";
-            this.treeView_nt_Menu.Size = new System.Drawing.Size(125, 70);
+            this.treeView_nt_Menu.Size = new System.Drawing.Size(123, 70);
             this.treeView_nt_Menu.Paint += new System.Windows.Forms.PaintEventHandler(this.treeView_nt_Menu_Paint);
             // 
             // tsmi添加好友
             // 
             this.tsmi添加好友.Name = "tsmi添加好友";
-            this.tsmi添加好友.Size = new System.Drawing.Size(124, 22);
+            this.tsmi添加好友.Size = new System.Drawing.Size(122, 22);
             this.tsmi添加好友.Text = "添加好友";
             this.tsmi添加好友.Click += new System.EventHandler(this.tsmi添加好友_Click);
             // 
             // tsmi发送消息
             // 
             this.tsmi发送消息.Name = "tsmi发送消息";
-            this.tsmi发送消息.Size = new System.Drawing.Size(124, 22);
+            this.tsmi发送消息.Size = new System.Drawing.Size(122, 22);
             this.tsmi发送消息.Text = "发送消息";
             this.tsmi发送消息.Click += new System.EventHandler(this.tsmi发送消息_Click);
             // 
             // tsmi查看信息
             // 
             this.tsmi查看信息.Name = "tsmi查看信息";
-            this.tsmi查看信息.Size = new System.Drawing.Size(124, 22);
+            this.tsmi查看信息.Size = new System.Drawing.Size(122, 22);
             this.tsmi查看信息.Text = "查看信息";
             this.tsmi查看信息.Click += new System.EventHandler(this.tsmi查看信息_Click);
             // 
@@ -422,14 +423,14 @@
             this.离开ToolStripMenuItem,
             this.离线ToolStripMenuItem});
             this.btn_state_Menu.Name = "iContextMenu1";
-            this.btn_state_Menu.Size = new System.Drawing.Size(125, 114);
+            this.btn_state_Menu.Size = new System.Drawing.Size(123, 114);
             // 
             // 我在线上ToolStripMenuItem
             // 
             this.我在线上ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("我在线上ToolStripMenuItem.Image")));
             this.我在线上ToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.我在线上ToolStripMenuItem.Name = "我在线上ToolStripMenuItem";
-            this.我在线上ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.我在线上ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.我在线上ToolStripMenuItem.Text = "我在线上";
             this.我在线上ToolStripMenuItem.Click += new System.EventHandler(this.我在线上ToolStripMenuItem_Click);
             // 
@@ -438,7 +439,7 @@
             this.忙碌ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("忙碌ToolStripMenuItem.Image")));
             this.忙碌ToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.忙碌ToolStripMenuItem.Name = "忙碌ToolStripMenuItem";
-            this.忙碌ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.忙碌ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.忙碌ToolStripMenuItem.Text = "忙碌";
             this.忙碌ToolStripMenuItem.Click += new System.EventHandler(this.忙碌ToolStripMenuItem_Click);
             // 
@@ -447,7 +448,7 @@
             this.隐身ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("隐身ToolStripMenuItem.Image")));
             this.隐身ToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.隐身ToolStripMenuItem.Name = "隐身ToolStripMenuItem";
-            this.隐身ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.隐身ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.隐身ToolStripMenuItem.Text = "隐身";
             this.隐身ToolStripMenuItem.Visible = false;
             // 
@@ -456,7 +457,7 @@
             this.离开ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("离开ToolStripMenuItem.Image")));
             this.离开ToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.离开ToolStripMenuItem.Name = "离开ToolStripMenuItem";
-            this.离开ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.离开ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.离开ToolStripMenuItem.Text = "离开";
             this.离开ToolStripMenuItem.Click += new System.EventHandler(this.离开ToolStripMenuItem_Click);
             // 
@@ -465,7 +466,7 @@
             this.离线ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("离线ToolStripMenuItem.Image")));
             this.离线ToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.离线ToolStripMenuItem.Name = "离线ToolStripMenuItem";
-            this.离线ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.离线ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.离线ToolStripMenuItem.Text = "离线";
             this.离线ToolStripMenuItem.Visible = false;
             // 
@@ -489,14 +490,14 @@
             this.打开主面板ToolStripMenuItem,
             this.退出ToolStripMenuItem});
             this.notifyIcon_MessageQueue_Menu.Name = "nContextMenu1";
-            this.notifyIcon_MessageQueue_Menu.Size = new System.Drawing.Size(149, 148);
+            this.notifyIcon_MessageQueue_Menu.Size = new System.Drawing.Size(147, 148);
             // 
             // 我在线上ToolStripMenuItem1
             // 
             this.我在线上ToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("我在线上ToolStripMenuItem1.Image")));
             this.我在线上ToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.我在线上ToolStripMenuItem1.Name = "我在线上ToolStripMenuItem1";
-            this.我在线上ToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
+            this.我在线上ToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
             this.我在线上ToolStripMenuItem1.Text = "我在线上";
             this.我在线上ToolStripMenuItem1.Click += new System.EventHandler(this.我在线上ToolStripMenuItem1_Click);
             // 
@@ -505,7 +506,7 @@
             this.忙碌ToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("忙碌ToolStripMenuItem1.Image")));
             this.忙碌ToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.忙碌ToolStripMenuItem1.Name = "忙碌ToolStripMenuItem1";
-            this.忙碌ToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
+            this.忙碌ToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
             this.忙碌ToolStripMenuItem1.Text = "忙碌";
             this.忙碌ToolStripMenuItem1.Click += new System.EventHandler(this.忙碌ToolStripMenuItem1_Click);
             // 
@@ -514,38 +515,38 @@
             this.离开ToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("离开ToolStripMenuItem1.Image")));
             this.离开ToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.离开ToolStripMenuItem1.Name = "离开ToolStripMenuItem1";
-            this.离开ToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
+            this.离开ToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
             this.离开ToolStripMenuItem1.Text = "离开";
             this.离开ToolStripMenuItem1.Click += new System.EventHandler(this.离开ToolStripMenuItem1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(145, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // 关闭声音ToolStripMenuItem
             // 
             this.关闭声音ToolStripMenuItem.Name = "关闭声音ToolStripMenuItem";
-            this.关闭声音ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.关闭声音ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.关闭声音ToolStripMenuItem.Text = "关闭所有声音";
             this.关闭声音ToolStripMenuItem.Click += new System.EventHandler(this.关闭声音ToolStripMenuItem_Click);
             // 
             // sToolStripMenuItem
             // 
             this.sToolStripMenuItem.Name = "sToolStripMenuItem";
-            this.sToolStripMenuItem.Size = new System.Drawing.Size(145, 6);
+            this.sToolStripMenuItem.Size = new System.Drawing.Size(143, 6);
             // 
             // 打开主面板ToolStripMenuItem
             // 
             this.打开主面板ToolStripMenuItem.Name = "打开主面板ToolStripMenuItem";
-            this.打开主面板ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.打开主面板ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.打开主面板ToolStripMenuItem.Text = "打开主面板";
             this.打开主面板ToolStripMenuItem.Click += new System.EventHandler(this.打开主面板ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -569,11 +570,28 @@
             this.btn_color.Visible = false;
             this.btn_color.Click += new System.EventHandler(this.btn_color_Click);
             // 
+            // basicTextBox1
+            // 
+            this.basicTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.basicTextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.basicTextBox1.IsFocused = false;
+            this.basicTextBox1.IsPass = false;
+            this.basicTextBox1.Location = new System.Drawing.Point(1, 100);
+            this.basicTextBox1.MaxLength = 32767;
+            this.basicTextBox1.Multi = false;
+            this.basicTextBox1.Name = "basicTextBox1";
+            this.basicTextBox1.ReadOn = false;
+            this.basicTextBox1.Size = new System.Drawing.Size(238, 23);
+            this.basicTextBox1.TabIndex = 69;
+            this.basicTextBox1.Texts = "";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(240, 492);
+            this.Controls.Add(this.basicTextBox1);
             this.Controls.Add(this.btn_color);
             this.Controls.Add(this.panel_lt);
             this.Controls.Add(this.panel_nt);
@@ -613,6 +631,7 @@
             this.Controls.SetChildIndex(this.panel_nt, 0);
             this.Controls.SetChildIndex(this.panel_lt, 0);
             this.Controls.SetChildIndex(this.btn_color, 0);
+            this.Controls.SetChildIndex(this.basicTextBox1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btn_mail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_default_index)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userImg)).EndInit();
@@ -683,6 +702,7 @@
         private UI.Control.QQToolStripMenuItem tsmi发送消息;
         private UI.Control.QQToolStripMenuItem tsmi查看信息;
         private UI.Control.BarImageButton btn_color;
+        private UI.Control.BasicTextBox basicTextBox1;
 
     }
 }
