@@ -272,10 +272,10 @@ namespace CSS.IM.UI.Control
 
 
 
-            Bmp = ResClass.GetImgRes("main_search_bkg");
+            /*Bmp = ResClass.GetImgRes("main_search_bkg");
             g.DrawImage(Bmp, new Rectangle(2, 99, 9, Bmp.Height), 0, 0, 9, Bmp.Height, GraphicsUnit.Pixel);
             g.DrawImage(Bmp, new Rectangle(11, 99, this.Width - 22, Bmp.Height), 9, 0, Bmp.Width - 18, Bmp.Height, GraphicsUnit.Pixel);
-            g.DrawImage(Bmp, new Rectangle(this.Width - 11, 99, 9, Bmp.Height), Bmp.Width - 9, 0, 9, Bmp.Height, GraphicsUnit.Pixel);
+            g.DrawImage(Bmp, new Rectangle(this.Width - 11, 99, 9, Bmp.Height), Bmp.Width - 9, 0, 9, Bmp.Height, GraphicsUnit.Pixel);*/
         }
 
         private void ResizeControl()
