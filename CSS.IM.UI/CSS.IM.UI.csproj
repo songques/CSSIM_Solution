@@ -597,6 +597,7 @@
     <Content Include="Resources\Ico\Iico.ico" />
     <Content Include="Resources\Ico\Imessage.ico" />
     <None Include="Resources\Skins\menu_bkg_check.png" />
+    <None Include="Resources\Iico.ico" />
     <Content Include="Resources\Skins\allbtn_down.png" />
     <Content Include="Resources\Skins\allbtn_highlight.png" />
     <Content Include="Resources\Skins\All_down_arrow.png" />

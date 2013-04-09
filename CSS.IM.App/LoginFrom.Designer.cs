@@ -63,11 +63,9 @@
             this.QQcm_menu = new CSS.IM.UI.Control.QQContextMenu();
             this.QQtsm_ServerAddress = new CSS.IM.UI.Control.QQToolStripMenuItem();
             this.QQtsm_region = new CSS.IM.UI.Control.QQToolStripMenuItem();
-            this.ax_bs = new Axbsioav2Lib.Axbsioav2();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.QQcm_menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ax_bs)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonClose
@@ -78,7 +76,7 @@
             // btn_login
             // 
             this.btn_login.BackColor = System.Drawing.Color.Transparent;
-            this.btn_login.Font = new System.Drawing.Font("宋体", 9F);
+            this.btn_login.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.btn_login.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_login.Location = new System.Drawing.Point(172, 224);
             this.btn_login.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -92,7 +90,7 @@
             // btn_setings
             // 
             this.btn_setings.BackColor = System.Drawing.Color.Transparent;
-            this.btn_setings.Font = new System.Drawing.Font("宋体", 9F);
+            this.btn_setings.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.btn_setings.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_setings.Location = new System.Drawing.Point(52, 224);
             this.btn_setings.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -155,9 +153,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 31);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(292, 87);
+            this.pictureBox1.Size = new System.Drawing.Size(297, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
@@ -233,15 +231,6 @@
             this.QQtsm_region.Text = "注册用户";
             this.QQtsm_region.Click += new System.EventHandler(this.QQtsm_region_Click);
             // 
-            // ax_bs
-            // 
-            this.ax_bs.Enabled = true;
-            this.ax_bs.Location = new System.Drawing.Point(10, 40);
-            this.ax_bs.Name = "ax_bs";
-            this.ax_bs.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("ax_bs.OcxState")));
-            this.ax_bs.Size = new System.Drawing.Size(37, 28);
-            this.ax_bs.TabIndex = 31;
-            // 
             // LoginFrom
             // 
             this.AllowResize = false;
@@ -258,7 +247,7 @@
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.txt_pswd);
             this.Controls.Add(this.btn_setings);
-            this.Controls.Add(this.ax_bs);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginFrom";
@@ -266,7 +255,6 @@
             this.Text = "CSS&IM";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginFrom_FormClosed);
             this.Load += new System.EventHandler(this.LoginFrom_Load);
-            this.Controls.SetChildIndex(this.ax_bs, 0);
             this.Controls.SetChildIndex(this.ButtonClose, 0);
             this.Controls.SetChildIndex(this.btn_setings, 0);
             this.Controls.SetChildIndex(this.txt_pswd, 0);
@@ -281,7 +269,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.QQcm_menu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ax_bs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,6 +291,5 @@
         private UI.Control.QQContextMenu QQcm_menu;
         private UI.Control.QQToolStripMenuItem QQtsm_ServerAddress;
         private UI.Control.QQToolStripMenuItem QQtsm_region;
-        private Axbsioav2Lib.Axbsioav2 ax_bs;
     }
 }

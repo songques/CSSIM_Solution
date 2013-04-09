@@ -33,6 +33,7 @@ namespace CSS.IM.UI.Form
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasicMsgBoxForm));
             this.messageText = new System.Windows.Forms.Label();
             this.iconPic = new System.Windows.Forms.PictureBox();
             this.no = new CSS.IM.UI.Control.BasicButton();
@@ -76,6 +77,7 @@ namespace CSS.IM.UI.Form
             this.no.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.no.ForeColor = System.Drawing.Color.DarkBlue;
             this.no.Location = new System.Drawing.Point(262, 123);
+            this.no.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.no.Name = "no";
             this.no.Size = new System.Drawing.Size(69, 21);
             this.no.TabIndex = 5;
@@ -90,6 +92,7 @@ namespace CSS.IM.UI.Form
             this.canel.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.canel.ForeColor = System.Drawing.Color.DarkBlue;
             this.canel.Location = new System.Drawing.Point(187, 123);
+            this.canel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.canel.Name = "canel";
             this.canel.Size = new System.Drawing.Size(69, 21);
             this.canel.TabIndex = 4;
@@ -104,6 +107,7 @@ namespace CSS.IM.UI.Form
             this.ok.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.ok.ForeColor = System.Drawing.Color.DarkBlue;
             this.ok.Location = new System.Drawing.Point(112, 123);
+            this.ok.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ok.Name = "ok";
             this.ok.Size = new System.Drawing.Size(69, 21);
             this.ok.TabIndex = 3;
@@ -117,6 +121,7 @@ namespace CSS.IM.UI.Form
             this.Retry.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.Retry.ForeColor = System.Drawing.Color.DarkBlue;
             this.Retry.Location = new System.Drawing.Point(187, 123);
+            this.Retry.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Retry.Name = "Retry";
             this.Retry.Size = new System.Drawing.Size(69, 21);
             this.Retry.TabIndex = 24;
@@ -140,6 +145,7 @@ namespace CSS.IM.UI.Form
             this.Controls.Add(this.ok);
             this.Controls.Add(this.iconPic);
             this.Controls.Add(this.messageText);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BasicMsgBoxForm";

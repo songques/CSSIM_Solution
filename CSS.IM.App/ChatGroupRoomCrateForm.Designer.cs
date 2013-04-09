@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChatGroupRoomCrateForm));
             this.groupBox1 = new CSS.IM.UI.Control.SPanle();
             this.lab_02 = new System.Windows.Forms.Label();
             this.lab_01 = new System.Windows.Forms.Label();
@@ -110,6 +111,7 @@
             // txt_pswd2
             // 
             this.txt_pswd2.BackColor = System.Drawing.Color.Transparent;
+            this.txt_pswd2.IsFocused = false;
             this.txt_pswd2.IsPass = true;
             this.txt_pswd2.Location = new System.Drawing.Point(128, 100);
             this.txt_pswd2.MaxLength = 32767;
@@ -123,6 +125,7 @@
             // txt_pswd1
             // 
             this.txt_pswd1.BackColor = System.Drawing.Color.Transparent;
+            this.txt_pswd1.IsFocused = false;
             this.txt_pswd1.IsPass = true;
             this.txt_pswd1.Location = new System.Drawing.Point(128, 71);
             this.txt_pswd1.MaxLength = 32767;
@@ -136,6 +139,7 @@
             // txt_tm
             // 
             this.txt_tm.BackColor = System.Drawing.Color.Transparent;
+            this.txt_tm.IsFocused = false;
             this.txt_tm.IsPass = false;
             this.txt_tm.Location = new System.Drawing.Point(128, 42);
             this.txt_tm.MaxLength = 32767;
@@ -149,6 +153,7 @@
             // txt_name
             // 
             this.txt_name.BackColor = System.Drawing.Color.Transparent;
+            this.txt_name.IsFocused = false;
             this.txt_name.IsPass = false;
             this.txt_name.Location = new System.Drawing.Point(128, 13);
             this.txt_name.MaxLength = 32767;
@@ -272,6 +277,7 @@
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_crate);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ChatGroupRoomCrateForm";

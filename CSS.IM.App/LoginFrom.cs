@@ -18,14 +18,6 @@ namespace CSS.IM.App
 {
     public partial class LoginFrom : BasicForm
     {
-        /*
-         *X mppCon_OnAuthError 中注视 LogOut(false, false);
-         * 打开
-         * //Application.Exit();
-         */
-        //USB Key验证功能
-        private readonly CSSPCLIENTCOMLib.ICSSPClient cssClient = null;
-        private bool isCSOpen = true;
 
         private MainForm _MainForm;
         private string HistoryFilename="";//最后一次登录的用户名;
@@ -47,44 +39,17 @@ namespace CSS.IM.App
             _MainForm = qqMainForm;
             InitializeComponent();
 
-            if (isCSOpen)
+            if (isAuto)
             {
-                try
-                {
-
-                    txt_name.MaxLength = 100;
-                    txt_pswd.ReadOn = true;
-                    txt_name.ReadOn = true;
-
-                    cssClient = new CSSPCLIENTCOMLib.CSSPClientClass();
-                }
-                catch (Exception ex)
-                {
-                    MsgBox.Show(this, "CSS&IM", "程序启动失败," + ex.Message, MessageBoxButtons.OK);
-                    Application.Exit();
-                }
-
-
-                if (isAuto)
-                {
-                    lab_isAutoLogin.Visible = true;
-                    timer1.Enabled = true;
-                }
+                lab_isAutoLogin.Visible = true;
+                timer1.Enabled = true;
             }
-            else
-            {
-                if (isAuto)
-                {
-                    lab_isAutoLogin.Visible = true;
-                    timer1.Enabled = true;
-                }
-                txt_name.Enabled = false;
-                txt_pswd.Enabled = false;
 
-                
-            }
+            txt_name.Enabled = false;
+            txt_pswd.Enabled = false;
 
             txt_name.Texts = Program.UserName;
+
             chb_autu.Enabled = false;
             chb_save.Enabled = false;
             btn_login.Enabled = false;
@@ -162,90 +127,23 @@ namespace CSS.IM.App
              省政府用的key验证
              */
 
-            if (isCSOpen)
+            txt_name.Focus();
+            if (System.IO.File.Exists(CSS.IM.UI.Util.Path.HistoryFilename))
             {
-                string reslut = ax_bs.Login1();
-                if (reslut == null || reslut.Trim().Length <= 0)
-                {
-                    MsgBox.Show(this, "CSS&IM", "OCX Login1调用错误.", MessageBoxButtons.OK);
-                    Application.Exit();
-                    return;
-                }
-                //初始化服务
-                int greslut = cssClient.comInit("127.0.0.1", 8800);
-                if (greslut != 0)
-                {
-                    MsgBox.Show(this, "CSS&IM", "初始化验证服务错误.", MessageBoxButtons.OK);
-                    Application.Exit();
-                    return;
-                }
-                //com login1调用 
-                greslut = cssClient.comLogin1(reslut, out reslut);
-                if (greslut != 0)
-                {
-                    MsgBox.Show(this, "CSS&IM", "COM Login1调用错误.", MessageBoxButtons.OK);
-                    Application.Exit();
-                    return;
-                }
-                //ocx login2调用
-                reslut = ax_bs.Login2(reslut);
-                if (reslut == null || reslut.Trim().Length <= 0)
-                {
-                    MsgBox.Show(this, "CSS&IM", "OCX login2调用错误。", MessageBoxButtons.OK);
-                    Application.Exit();
-                    return;
-                }
-
-                greslut = cssClient.comLogin2(reslut, out reslut);
-                if (greslut != 0)
-                {
-                    MsgBox.Show(this, "CSS&IM", "COM Login1调用错误.", MessageBoxButtons.OK);
-                    Application.Exit();
-                    return;
-                }
-
-                //txt_name.Texts = info_item[1];
-                txt_name.Texts = reslut;
-                txt_pswd.Texts = "1";
-
-                /*string[] infos = reslut.Split(',');
-
-                foreach (string info_items in infos)
-                {
-                    string[] info_item = info_items.Split('=');
-                    if (info_item[0] == "DN")
-                    {
-                        txt_name.Texts = info_item[1];
-                        //txt_name.Texts = info_items;
-                        txt_pswd.Texts = "1";
-                        break;
-                    
-                    }
-                }*/
-                /******************************************************************/
-
+                Document load_doc = new Document();
+                load_doc.LoadFile(CSS.IM.UI.Util.Path.HistoryFilename);
+                Settings.HistoryLogin HLlgin = load_doc.RootElement as Settings.HistoryLogin;
+                HistoryFilename = HLlgin.LoginName;
             }
-            else
+
+            chb_autu.Enabled = true;
+            chb_save.Enabled = true;
+            txt_name.Enabled = true;
+            txt_pswd.Enabled = true;
+
+            if (HistoryFilename.Trim().Length > 0)
             {
-                txt_name.Focus();
-                if (System.IO.File.Exists(CSS.IM.UI.Util.Path.HistoryFilename))
-                {
-                    Document load_doc = new Document();
-                    load_doc.LoadFile(CSS.IM.UI.Util.Path.HistoryFilename);
-                    Settings.HistoryLogin HLlgin = load_doc.RootElement as Settings.HistoryLogin;
-                    HistoryFilename = HLlgin.LoginName;
-                }
-
-                chb_autu.Enabled = true;
-                chb_save.Enabled = true;
-                txt_name.Enabled = true;
-                txt_pswd.Enabled = true;
-               
-
-                if (HistoryFilename.Trim().Length > 0)
-                {
-                    LoadSettings();
-                }
+                LoadSettings();
             }
 
             btn_login.Enabled = true;
