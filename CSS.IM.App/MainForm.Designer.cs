@@ -91,7 +91,10 @@
             this.退出ToolStripMenuItem = new CSS.IM.UI.Control.QQToolStripMenuItem();
             this.timer_MessageAlert = new System.Windows.Forms.Timer(this.components);
             this.btn_color = new CSS.IM.UI.Control.BarImageButton();
-            this.basicTextBox1 = new CSS.IM.UI.Control.BasicTextBox();
+            this.txt_search = new System.Windows.Forms.TextBox();
+            this.panel_Search = new System.Windows.Forms.Panel();
+            this.qqHistoryListViewEx_panel_Search = new CSS.IM.UI.Control.QQHistoryListViewEx();
+            this.btn_searh_clear = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_mail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_default_index)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userImg)).BeginInit();
@@ -110,6 +113,8 @@
             this.btn_state_Menu.SuspendLayout();
             this.notifyIcon_MessageQueue_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_color)).BeginInit();
+            this.panel_Search.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_searh_clear)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_state
@@ -570,28 +575,64 @@
             this.btn_color.Visible = false;
             this.btn_color.Click += new System.EventHandler(this.btn_color_Click);
             // 
-            // basicTextBox1
+            // txt_search
             // 
-            this.basicTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txt_search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.basicTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.basicTextBox1.IsFocused = false;
-            this.basicTextBox1.IsPass = false;
-            this.basicTextBox1.Location = new System.Drawing.Point(1, 100);
-            this.basicTextBox1.MaxLength = 32767;
-            this.basicTextBox1.Multi = false;
-            this.basicTextBox1.Name = "basicTextBox1";
-            this.basicTextBox1.ReadOn = false;
-            this.basicTextBox1.Size = new System.Drawing.Size(238, 23);
-            this.basicTextBox1.TabIndex = 69;
-            this.basicTextBox1.Texts = "";
+            this.txt_search.Location = new System.Drawing.Point(2, 100);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(236, 23);
+            this.txt_search.TabIndex = 69;
+            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
+            // 
+            // panel_Search
+            // 
+            this.panel_Search.BackColor = System.Drawing.Color.White;
+            this.panel_Search.Controls.Add(this.qqHistoryListViewEx_panel_Search);
+            this.panel_Search.Location = new System.Drawing.Point(2, 125);
+            this.panel_Search.Name = "panel_Search";
+            this.panel_Search.Size = new System.Drawing.Size(236, 330);
+            this.panel_Search.TabIndex = 70;
+            this.panel_Search.Visible = false;
+            // 
+            // qqHistoryListViewEx_panel_Search
+            // 
+            this.qqHistoryListViewEx_panel_Search.AutoScroll = true;
+            this.qqHistoryListViewEx_panel_Search.BackColor = System.Drawing.Color.White;
+            this.qqHistoryListViewEx_panel_Search.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.qqHistoryListViewEx_panel_Search.FCType = CSS.IM.UI.Control.FriendContainerType.Big;
+            this.qqHistoryListViewEx_panel_Search.Location = new System.Drawing.Point(0, 0);
+            this.qqHistoryListViewEx_panel_Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.qqHistoryListViewEx_panel_Search.Name = "qqHistoryListViewEx_panel_Search";
+            this.qqHistoryListViewEx_panel_Search.OldSelectFriend = null;
+            this.qqHistoryListViewEx_panel_Search.Rosters = ((System.Collections.Generic.Dictionary<string, CSS.IM.UI.Entity.Friend>)(resources.GetObject("qqHistoryListViewEx_panel_Search.Rosters")));
+            this.qqHistoryListViewEx_panel_Search.SelectFriend = null;
+            this.qqHistoryListViewEx_panel_Search.Size = new System.Drawing.Size(236, 330);
+            this.qqHistoryListViewEx_panel_Search.TabIndex = 0;
+            this.qqHistoryListViewEx_panel_Search.XmppConnection = null;
+            // 
+            // btn_searh_clear
+            // 
+            this.btn_searh_clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_searh_clear.BackColor = System.Drawing.Color.White;
+            this.btn_searh_clear.Image = ((System.Drawing.Image)(resources.GetObject("btn_searh_clear.Image")));
+            this.btn_searh_clear.Location = new System.Drawing.Point(219, 104);
+            this.btn_searh_clear.Name = "btn_searh_clear";
+            this.btn_searh_clear.Size = new System.Drawing.Size(14, 14);
+            this.btn_searh_clear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btn_searh_clear.TabIndex = 73;
+            this.btn_searh_clear.TabStop = false;
+            this.btn_searh_clear.Visible = false;
+            this.btn_searh_clear.Click += new System.EventHandler(this.btn_searh_clear_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(240, 492);
-            this.Controls.Add(this.basicTextBox1);
+            this.Controls.Add(this.btn_searh_clear);
+            this.Controls.Add(this.panel_Search);
+            this.Controls.Add(this.txt_search);
             this.Controls.Add(this.btn_color);
             this.Controls.Add(this.panel_lt);
             this.Controls.Add(this.panel_nt);
@@ -631,7 +672,9 @@
             this.Controls.SetChildIndex(this.panel_nt, 0);
             this.Controls.SetChildIndex(this.panel_lt, 0);
             this.Controls.SetChildIndex(this.btn_color, 0);
-            this.Controls.SetChildIndex(this.basicTextBox1, 0);
+            this.Controls.SetChildIndex(this.txt_search, 0);
+            this.Controls.SetChildIndex(this.panel_Search, 0);
+            this.Controls.SetChildIndex(this.btn_searh_clear, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btn_mail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_default_index)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userImg)).EndInit();
@@ -650,6 +693,8 @@
             this.btn_state_Menu.ResumeLayout(false);
             this.notifyIcon_MessageQueue_Menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_color)).EndInit();
+            this.panel_Search.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_searh_clear)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -702,7 +747,10 @@
         private UI.Control.QQToolStripMenuItem tsmi发送消息;
         private UI.Control.QQToolStripMenuItem tsmi查看信息;
         private UI.Control.BarImageButton btn_color;
-        private UI.Control.BasicTextBox basicTextBox1;
+        private System.Windows.Forms.TextBox txt_search;
+        private System.Windows.Forms.Panel panel_Search;
+        private UI.Control.QQHistoryListViewEx qqHistoryListViewEx_panel_Search;
+        private System.Windows.Forms.PictureBox btn_searh_clear;
 
     }
 }

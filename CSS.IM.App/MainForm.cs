@@ -112,10 +112,12 @@ namespace CSS.IM.App
             btn_tools.Image = ResClass.GetImgRes("Tools");
             btn_message.Image = ResClass.GetImgRes("message");
             btn_find.Image = ResClass.GetImgRes("find");
+            btn_searh_clear.Image = ResClass.GetImgRes("btn_clear");
             panel_fd.Location = panel_gp.Location = panel_nt.Location = panel_lt.Location = new Point(2, 150);
-            panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, this.Height - 235 + 50);
+            panel_Search.Location = new Point(2, 125);
+            listView_fd.Size= panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, this.Height - 235 + 50);
+            panel_Search.Size = new Size(this.Width - 4, this.Height - 235+77);
             //panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, 100);
-            listView_fd.Size = panel_fd.Size;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -126,6 +128,7 @@ namespace CSS.IM.App
             listView_fd.FCType = FriendContainerType.Small;
             chatHistory_lt.FCType = listView_fd.FCType;
             listView_gp.FCType = listView_fd.FCType;
+            qqHistoryListViewEx_panel_Search.FCType = listView_fd.FCType;
 
             #region 注册快捷按键
             string[] keys = CSS.IM.UI.Util.Path.GetOutMsgKeyTYpe.Split('+');
@@ -243,11 +246,12 @@ namespace CSS.IM.App
             btn_lt.Left = btn_nt.Left + btn_nt.Width;
             btn_lt.Width = Width - btn_lt.Left - 2;
             //search_Btn.Left = Width - search_Btn.Width - 3;
-            panel_fd.Location = panel_gp.Location = panel_nt.Location = panel_lt.Location = new Point(2, 150);
+            panel_fd.Location = panel_gp.Location = panel_nt.Location = panel_lt.Location = new Point(2, 151);
+            panel_Search.Location = new Point(2, 125);
             //panel_fd.Location = panel_gp.Location = panel_nt.Location = panel_lt.Location = new Point(2, 127);
-            panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, this.Height - 235 + 50);
+            listView_fd.Size = panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, this.Height - 235 + 50);
+            panel_Search.Size = new Size(this.Width - 4, this.Height - 235 + 77);
             //panel_fd.Size = panel_gp.Size = panel_nt.Size = panel_lt.Size = new Size(this.Width - 4, this.Height - 211 + 50);
-            listView_fd.Size = panel_fd.Size;
             //friendListView.Size = groupListView.Size = pal_tree.Size = lastListView.Size = new Size(this.Width - 4, this.Height - 211);//设置 好友列表区的大小
             //menu_Btn.Top = Height - menu_Btn.Height - 10;
             btn_tools.Top = Height - btn_tools.Height - 10;
@@ -2864,6 +2868,34 @@ namespace CSS.IM.App
             {
                 treeView_nt.ContextMenuStrip = null;
             }
+        }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_search.Text == "")
+            {
+                panel_Search.Visible = false;
+                btn_searh_clear.Visible = false;
+                qqHistoryListViewEx_panel_Search.RemoveFriendAll();
+            }
+            else
+            {
+                btn_searh_clear.Visible = true;
+                panel_Search.Visible = true;
+
+                Jid Toid = XmppCon.MyJID;
+                Toid.User = "songques";
+                Friend flfriend = listView_fd.Rosters[Toid.Bare];
+                qqHistoryListViewEx_panel_Search.XmppConnection = XmppCon;
+                qqHistoryListViewEx_panel_Search.AddFriend(flfriend);
+            }
+
+        }
+
+        private void btn_searh_clear_Click(object sender, EventArgs e)
+        {
+            txt_search.Text = "";
+
         }
 
     }

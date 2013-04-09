@@ -291,7 +291,15 @@ namespace CSS.IM.App
                 CSS.IM.UI.Util.Path.SColor = cl;
             }
 
-            Util.RunWhenStart(CSS.IM.UI.Util.Path.Initial, "CSS&IM", Application.StartupPath + @"\CSSIM.exe");
+            try
+            {
+                Util.RunWhenStart(CSS.IM.UI.Util.Path.Initial, "CSS&IM", Application.StartupPath + @"\CSSIM.exe");
+            }
+            catch (Exception)
+            {
+                
+            }
+            
 
 
             /*key验证杜宾用*/

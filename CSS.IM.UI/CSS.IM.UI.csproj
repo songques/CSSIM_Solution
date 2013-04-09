@@ -450,6 +450,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\btn_clear.png" />
     <Content Include="Resources\Ext\Cursor.png" />
     <Content Include="Resources\Ext\nonevoid.png" />
     <Content Include="Resources\Ext\RemoteDesktopWating.jpg" />
@@ -602,6 +603,7 @@
     <Content Include="Resources\Skins\All_down_arrow.png" />
     <Content Include="Resources\Skins\All_iconbutton_highlightBackground.png" />
     <Content Include="Resources\Skins\all_iconbutton_pushedBackground.png" />
+    <Content Include="Resources\Skins\btn_clear.png" />
     <Content Include="Resources\Skins\btn_close_down.png" />
     <Content Include="Resources\Skins\btn_close_highlight.png" />
     <Content Include="Resources\Skins\btn_close_normal.png" />
