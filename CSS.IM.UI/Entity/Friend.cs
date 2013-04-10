@@ -17,6 +17,7 @@ namespace CSS.IM.UI.Entity
         public bool IsOnline { get; set; }
         public int State { get; set; }
         public int GroupID { get; set; }
+        public bool isTreeSearch { get; set; }
 
 
     }

@@ -22,6 +22,7 @@ namespace CSS.IM.UI.Control
         private XmppClientConnection XmppConn;
         private Jid MJid;
 
+        public bool isTreeSearch{get;set;}
         private string NameRmark=null;//备注名称
         public string NickName{get;set;}//显示的名称
         public Boolean OnLine { get; set; }//用户是否在线
@@ -264,7 +265,8 @@ namespace CSS.IM.UI.Control
                             FriendInfo.HeadIMG = "big194";
                         headImgbak = ResClass.GetHead(FriendInfo.HeadIMG);
                     }
-                    NickName = vcard.Nickname.Trim() == "" ? MJid.User : vcard.Nickname.Trim();
+                    if (!isTreeSearch)
+                        NickName = vcard.Nickname.Trim() == "" ? MJid.User : vcard.Nickname.Trim();
                     NameRmark = NickName;//没办法的处理以后有血液的时候在说
                     FriendInfo.Description = vcard.Description;
                     FriendInfo.NikeName = NickName;

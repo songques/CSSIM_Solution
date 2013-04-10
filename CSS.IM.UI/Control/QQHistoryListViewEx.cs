@@ -84,22 +84,24 @@ namespace CSS.IM.UI.Control
             System.GC.Collect();
         }
 
-        public void AddFriend(Friend firend)
+        public void AddFriend(Friend firend_src)
         {
 
-            if (!Rosters.ContainsKey(firend.Ritem.Jid.Bare))
+            if (!Rosters.ContainsKey(firend_src.Ritem.Jid.Bare))
             {
-                FriendControl friend = new FriendControl(XmppConn,firend.Ritem.Jid);
+                FriendControl friend = new FriendControl(XmppConn,firend_src.Ritem.Jid);
+                friend.isTreeSearch = firend_src.isTreeSearch;
                 friend.FCType = FCType;;
                 friend.Location = new Point(1, (ItemHeight + 1) * this.Controls.Count);
-                friend.Name = firend.Ritem.Jid.Bare;
+                friend.Name = firend_src.Ritem.Jid.Bare;
                 friend.Size = new Size(this.Width - 2, ItemHeight);
-                friend.FriendInfo = firend;
+                friend.FriendInfo = firend_src;
+                friend.NickName = firend_src.NikeName;
                 friend.OpenChat += new CSS.IM.UI.Control.FriendControl.OpenChatEventHandler(friend_OpenChat);
                 friend.Selecting += new FriendControl.SelectedEventHandler(friend_Selecting);
                 friend.UpdateImage();//更新头像信息
                 Controls.Add(friend);
-                Rosters.Add(firend.Ritem.Jid.Bare, firend);
+                Rosters.Add(firend_src.Ritem.Jid.Bare, firend_src);
                 this.Height += (ItemHeight + 1);
             }
 

@@ -2552,6 +2552,19 @@ namespace CSS.IM.App
             }
 
             #endregion
+
+            #region 加载树图
+            if (filename == null || filename.Trim().Length == 0)
+                filename = "new";
+            IQ tree_iq = new IQ(IqType.get);
+            tree_iq.Id = CSS.IM.XMPP.Id.GetNextId();
+            tree_iq.Namespace = null;
+            CSS.IM.XMPP.protocol.Base.Query query = new CSS.IM.XMPP.protocol.Base.Query();
+            query.Attributes.Add("filename", filename);
+            query.Namespace = "xmlns:org:tree";
+            tree_iq.AddChild(query);
+            XmppCon.IqGrabber.SendIq(tree_iq, new IqCB(TreeResulit), null);
+            #endregion
         }
 
         /// <summary>
@@ -2893,10 +2906,12 @@ namespace CSS.IM.App
                         Toid.User = i.Key;
                         //Friend flfriend = listView_fd.Rosters[Toid.Bare];
                         Friend flfriend = new Friend();
+                        flfriend.isTreeSearch = true;
                         flfriend.NikeName = i.Value;
                         flfriend.Ritem = new RosterItem(Toid);
                         qqHistoryListViewEx_panel_Search.XmppConnection = XmppCon;
                         qqHistoryListViewEx_panel_Search.AddFriend(flfriend);
+                        qqHistoryListViewEx_panel_Search.OpenChatEvent += qqHistoryListViewEx_panel_Search_OpenChatEvent;
                     }
                 }
  
@@ -2908,6 +2923,52 @@ namespace CSS.IM.App
                 //qqHistoryListViewEx_panel_Search.AddFriend(flfriend);
             }
 
+        }
+
+        /// <summary>
+        /// 要查找结果中打开聊天窗口
+        /// </summary>
+        /// <param name="sender"></param>
+        public void qqHistoryListViewEx_panel_Search_OpenChatEvent(Friend sender)
+        {
+            Jid j = sender.Ritem.Jid;
+            if (!Util.ChatForms.ContainsKey(j.Bare))
+            {
+                listView_fd.UpdateFriendFlicker(j.Bare);
+
+                string nickName = sender.NikeName;
+                ChatFromMsg chat = new ChatFromMsg(j, XmppCon, nickName);
+
+                Friend friend;
+                if (listView_fd.Rosters.ContainsKey(j.Bare))
+                {
+                    friend = listView_fd.Rosters[j.Bare];
+                }
+                else
+                {
+                    friend = null;
+                }
+
+                if (friend != null)
+                {
+                    chat.UpdateFriendOnline(listView_fd.Rosters[j.Bare].IsOnline);
+                }
+
+                if (msgBox.ContainsKey(j.Bare.ToString()))
+                {
+                    chat.FristMessage(msgBox[j.Bare.ToString()]);
+                    msgBox.Remove(j.Bare.ToString());
+                }
+                try
+                {
+                    chat.Show();
+                }
+                catch (Exception)
+                {
+
+                }
+
+            }
         }
 
         private void btn_searh_clear_Click(object sender, EventArgs e)
