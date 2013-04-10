@@ -260,6 +260,8 @@ namespace CSS.IM.UI.Control
                     }
                     else
                     {
+                        if (FriendInfo.HeadIMG == null)
+                            FriendInfo.HeadIMG = "big194";
                         headImgbak = ResClass.GetHead(FriendInfo.HeadIMG);
                     }
                     NickName = vcard.Nickname.Trim() == "" ? MJid.User : vcard.Nickname.Trim();

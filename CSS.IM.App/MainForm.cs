@@ -35,6 +35,7 @@ namespace CSS.IM.App
         private Element orgsOld =new Element();
         private TreeNode Selectnode = null;//用于保存选取后的treenode
 
+        private Dictionary<String, String> userDic = new Dictionary<String, String>();
 
         public XmppClientConnection XmppCon = new XmppClientConnection();
         public DiscoManager discoManager;
@@ -1667,7 +1668,6 @@ namespace CSS.IM.App
 
         public void DescTreeGroup(Element root_item, TreeNode treeindex)
         {
-
             int elemntLength = root_item.ChildNodes.Count;
             for (int i = 0; i < elemntLength; i++)
             {
@@ -1683,6 +1683,8 @@ namespace CSS.IM.App
                             TreeNode node = new TreeNode(userName, 2, 2);
                             node.Tag = loginName;
                             treeindex.Nodes.Add(node);
+
+                            userDic.Add(loginName, userName);
                         }
 
                     }
@@ -2883,11 +2885,27 @@ namespace CSS.IM.App
                 btn_searh_clear.Visible = true;
                 panel_Search.Visible = true;
 
-                Jid Toid = XmppCon.MyJID;
-                Toid.User = "songques";
-                Friend flfriend = listView_fd.Rosters[Toid.Bare];
-                qqHistoryListViewEx_panel_Search.XmppConnection = XmppCon;
-                qqHistoryListViewEx_panel_Search.AddFriend(flfriend);
+                foreach (KeyValuePair<String, String> i in userDic)
+                {
+                    if(i.Key.Contains(txt_search.Text) || i.Value.Contains(txt_search.Text))
+                    {
+                        Jid Toid = XmppCon.MyJID;
+                        Toid.User = i.Key;
+                        //Friend flfriend = listView_fd.Rosters[Toid.Bare];
+                        Friend flfriend = new Friend();
+                        flfriend.NikeName = i.Value;
+                        flfriend.Ritem = new RosterItem(Toid);
+                        qqHistoryListViewEx_panel_Search.XmppConnection = XmppCon;
+                        qqHistoryListViewEx_panel_Search.AddFriend(flfriend);
+                    }
+                }
+ 
+
+                //Jid Toid = XmppCon.MyJID;
+                //Toid.User = "songques";
+                //Friend flfriend = listView_fd.Rosters[Toid.Bare];
+                //qqHistoryListViewEx_panel_Search.XmppConnection = XmppCon;
+                //qqHistoryListViewEx_panel_Search.AddFriend(flfriend);
             }
 
         }
