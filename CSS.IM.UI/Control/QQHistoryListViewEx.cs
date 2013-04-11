@@ -11,6 +11,8 @@ namespace CSS.IM.UI.Control
 {
     public class QQHistoryListViewEx : System.Windows.Forms.UserControl
     {
+        public bool isMenuShow { set; get; }
+
         private Friend _SelectFriend;
         public Friend SelectFriend
         {
@@ -26,6 +28,11 @@ namespace CSS.IM.UI.Control
                 UpdateFriendControl();
             }
         }
+
+        private QQContextMenu friend_qcm;
+
+        public delegate void friend_qcm_MouseClick_Delegate(object sender, Friend item, String type);//用于好友右单击事件
+        public event friend_qcm_MouseClick_Delegate friend_qcm_MouseClickEvent;
 
         public Friend OldSelectFriend { get; set; }
         private GroupControl ClickGroup { set; get; }
@@ -98,6 +105,8 @@ namespace CSS.IM.UI.Control
                 friend.FriendInfo = firend_src;
                 friend.NickName = firend_src.NikeName;
                 friend.OpenChat += new CSS.IM.UI.Control.FriendControl.OpenChatEventHandler(friend_OpenChat);
+                if (isMenuShow)
+                    friend.ShowContextMenu += new FriendControl.ShowContextMenuEventHandler(friend_ShowContextMenu);
                 friend.Selecting += new FriendControl.SelectedEventHandler(friend_Selecting);
                 friend.UpdateImage();//更新头像信息
                 Controls.Add(friend);
@@ -105,6 +114,56 @@ namespace CSS.IM.UI.Control
                 this.Height += (ItemHeight + 1);
             }
 
+            System.GC.Collect();
+        }
+
+        private void InitFriendMenu()
+        {
+
+            QQToolStripMenuItem qtsm_send = new QQToolStripMenuItem();
+            qtsm_send.Text = "发送消息";
+            qtsm_send.MouseDown += new MouseEventHandler(qtsm_send_MouseDown);
+
+            QQToolStripMenuItem qtsm_info = new QQToolStripMenuItem();
+            qtsm_info.Text = "查看资料";
+            qtsm_info.MouseDown += new MouseEventHandler(qtsm_info_MouseDown);
+
+            QQToolStripMenuItem qtsm_move = new QQToolStripMenuItem();
+            qtsm_move.MouseDown += new MouseEventHandler(qtsm_Addfriend_MouseDown);
+            qtsm_move.Text = "添加好友";
+
+            friend_qcm = new QQContextMenu();
+            friend_qcm.Items.AddRange(new ToolStripItem[] { qtsm_send, qtsm_info, qtsm_move });
+        }
+
+        private void friend_ShowContextMenu(FriendControl sender, MouseEventArgs e)
+        {
+            if (friend_qcm == null)
+            {
+                InitFriendMenu();
+            }
+            friend_qcm.Show(sender, e.Location);
+            System.GC.Collect();
+        }
+
+        void qtsm_send_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (friend_qcm_MouseClickEvent != null)
+                friend_qcm_MouseClickEvent(sender, SelectFriend, "char");
+            System.GC.Collect();
+        }
+
+        void qtsm_info_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (friend_qcm_MouseClickEvent != null)
+                friend_qcm_MouseClickEvent(sender, SelectFriend, "info");
+            System.GC.Collect();
+        }
+
+        void qtsm_Addfriend_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (friend_qcm_MouseClickEvent != null)
+                friend_qcm_MouseClickEvent(sender, SelectFriend, "add");
             System.GC.Collect();
         }
 

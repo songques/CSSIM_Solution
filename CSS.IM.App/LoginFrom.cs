@@ -134,6 +134,7 @@ namespace CSS.IM.App
             txt_pswd.Enabled = true;
 
 
+
             if (HistoryFilename.Trim().Length > 0)
             {
                 LoadSettings();

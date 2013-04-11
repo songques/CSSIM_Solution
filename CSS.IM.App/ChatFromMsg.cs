@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using CSS.IM.UI;
 using CSS.IM.UI.Control;
@@ -17,13 +14,11 @@ using System.Net;
 using CSS.IM.UI.Form;
 using CSS.IM.Library.Controls;
 using CSS.IM.XMPP.Xml.Dom;
-using CSS.IM.UI.Util;
 using System.Drawing.Imaging;
 using CSS.IM.Library.Controls.UdpSendFile;
 using CSS.IM.UI.Control.Graphics.FileTransfersControl;
 using System.Threading;
 using CSS.IM.Library.Net;
-using System.IO;
 
 namespace CSS.IM.App
 {

@@ -158,8 +158,10 @@ namespace CSS.IM.App
             #endregion;
 
             Util.HrefOpenFriendEvent += Util_HrefOpenFriendEvent;
+            qqHistoryListViewEx_panel_Search.friend_qcm_MouseClickEvent += qqHistoryListViewEx_panel_Search_friend_qcm_MouseClickEvent;
 
         }
+
 
         void Util_HrefOpenFriendEvent(string sender)
         {
@@ -2909,6 +2911,7 @@ namespace CSS.IM.App
                         flfriend.isTreeSearch = true;
                         flfriend.NikeName = i.Value;
                         flfriend.Ritem = new RosterItem(Toid);
+                        qqHistoryListViewEx_panel_Search.isMenuShow = true;
                         qqHistoryListViewEx_panel_Search.XmppConnection = XmppCon;
                         qqHistoryListViewEx_panel_Search.AddFriend(flfriend);
                         qqHistoryListViewEx_panel_Search.OpenChatEvent += qqHistoryListViewEx_panel_Search_OpenChatEvent;
@@ -2975,6 +2978,33 @@ namespace CSS.IM.App
         {
             txt_search.Text = "";
 
+        }
+
+
+
+        void qqHistoryListViewEx_panel_Search_friend_qcm_MouseClickEvent(object sender, Friend item, string type)
+        {
+            if (type == "char")
+            {
+                qqHistoryListViewEx_panel_Search_OpenChatEvent(item);
+            }
+            else if (type == "info")
+            {
+                VcardInfoForm vcardForm = new VcardInfoForm(item.Ritem.Jid, XmppCon);
+                try
+                {
+                    vcardForm.Show();
+                }
+                catch (Exception)
+                {
+
+                } 
+            }
+            else if (type == "add")
+            {
+                XmppCon.RosterManager.AddRosterItem(item.Ritem.Jid);
+                XmppCon.PresenceManager.Subscribe(item.Ritem.Jid);
+            }
         }
 
     }
