@@ -16,7 +16,7 @@ namespace CSS.IM.App
         public static string ServerIP = Util.ServerAddress;
         public static string Port = Util.OpenFirePort.ToString();
         public static IPAddress LocalHostIP;
-        public static string UserName="";//保存登录的用户名
+        public static string UserName = "";//保存登录的用户名
         //public static bool IsLogin = false;//是否是点登录按键登录，出现的socket连接关闭的错误
         public static string Vsion = "2.2.1.4";//当前版本号
 
@@ -41,7 +41,7 @@ namespace CSS.IM.App
             public string lpData;
 
         }
-        const int WM_COPYDATA = 0x004A;  
+        const int WM_COPYDATA = 0x004A;
 
         public static Process RunningInstance()
         {
@@ -103,13 +103,13 @@ namespace CSS.IM.App
             //判断当前登录用户是否为管理员
 
 
-            Dictionary<string, string> HrefMap=new Dictionary<string,string>();
-            
-            string[] arg_array={};
+            Dictionary<string, string> HrefMap = new Dictionary<string, string>();
+
+            string[] arg_array = { };
             if (args.Length > 0)
             {
-                args=args[0].Split(':');
-                arg_array=args[1].Split('&');
+                args = args[0].Split(':');
+                arg_array = args[1].Split('&');
             }
 
 
@@ -142,7 +142,7 @@ namespace CSS.IM.App
                 }*/
             }
 
-           
+
 
             Cursor.Current = Cursors.WaitCursor;
             Process instance = RunningInstance();
@@ -162,10 +162,18 @@ namespace CSS.IM.App
 
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
+                try
+                {
+                    Application.Run(new MainForm());
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("对不起，调用系统Win32API错误，请重新启动应用程序！");
+                    Application.DoEvents();
+                    Application.Exit();
+                }
 
-
-
-                //判断当前登录用户是否为管理员
+                /*//判断当前登录用户是否为管理员
                 if (principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator))
                 {
                     //如果是管理员，则直接运行
@@ -196,7 +204,7 @@ namespace CSS.IM.App
                     System.Diagnostics.Process.Start(startInfo);
                     //退出
                     System.Windows.Forms.Application.Exit();
-                }
+                }*/
             }
             else
             {
@@ -209,12 +217,12 @@ namespace CSS.IM.App
                 cds.dwData = (IntPtr)100;
                 cds.lpData = sendText;
                 cds.cbData = len + 1;
-                SendMessage(WINDOW_HANDLER, WM_COPYDATA, 0, ref cds);    
+                SendMessage(WINDOW_HANDLER, WM_COPYDATA, 0, ref cds);
                 //Util.HrefOpenFriendEventMethod(HrefMap["SD"].ToString());
                 //MessageBox.Show("abc");
             }
 
-            
+
         }
     }
 }
