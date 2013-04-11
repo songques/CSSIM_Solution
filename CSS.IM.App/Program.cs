@@ -162,10 +162,18 @@ namespace CSS.IM.App
 
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
+                try
+                {
+                    Application.Run(new MainForm());
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("对不起，调用系统Win32API错误，请重新启动应用程序！");
+                    Application.DoEvents();
+                    Application.Exit();
+                }
 
-
-
-                //判断当前登录用户是否为管理员
+                /*//判断当前登录用户是否为管理员
                 if (principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator))
                 {
                     //如果是管理员，则直接运行
@@ -196,7 +204,7 @@ namespace CSS.IM.App
                     System.Diagnostics.Process.Start(startInfo);
                     //退出
                     System.Windows.Forms.Application.Exit();
-                }
+                }*/
             }
             else
             {
@@ -213,8 +221,6 @@ namespace CSS.IM.App
                 //Util.HrefOpenFriendEventMethod(HrefMap["SD"].ToString());
                 //MessageBox.Show("abc");
             }
-
-            
         }
     }
 }

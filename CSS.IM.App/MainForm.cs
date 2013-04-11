@@ -2568,8 +2568,8 @@ namespace CSS.IM.App
             Program.UserName = XmppCon.Username;
             MsgBox.Show(waiting, "CSS&IM", "登录失败，用户名或密码错误！", MessageBoxButtons.OK);
             waiting.Close();
-            Application.Exit();
-            //LogOut(false, false);
+            //Application.Exit();
+            LogOut(false, false);
 
         }
 
