@@ -409,6 +409,7 @@ namespace CSS.IM.App.Settings
         //public static string ServerAddress = "10.0.3.10";
         public static string ServerAddress = "192.168.0.145";
         public static int OpenFirePort = 5222;
+
         public static int ftpPort = 21;
         public static string ftpUser = "root";
         //public static string ftpUser = "root";
