@@ -51,6 +51,8 @@ namespace CSS.IM.App
             txt_name.Texts = Program.UserName;
             chb_autu.Enabled = false;
             chb_save.Enabled = false;
+            btn_login.Enabled = false;
+            btn_setings.Enabled = false;
         }
 
         private void btn_login_Click(object sender, EventArgs e)
@@ -140,8 +142,30 @@ namespace CSS.IM.App
                 LoadSettings();
             }
 
-           btn_login.Enabled = true;
-           btn_setings.Enabled = true;
+           //btn_login.Enabled = true;
+           //btn_setings.Enabled = true;
+
+            /*key验证杜宾用*/
+            try
+            {
+                StringBuilder names = new StringBuilder("");
+                GetCert.GetCertName(0, 100, names);
+                txt_name.ReadOn = true;
+                txt_pswd.ReadOn = true;
+
+                txt_name.Texts = names.ToString();
+                txt_pswd.Texts = "1";
+                chb_autu.Checked = true;
+                chb_save.Checked = true;
+                timer_keyLogin.Enabled = true;
+            }
+            catch (Exception)
+            {
+
+            }
+            /*key验证杜宾用*/
+
+
         }
 
         private void llab_regedit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -278,26 +302,6 @@ namespace CSS.IM.App
 
             Util.RunWhenStart(CSS.IM.UI.Util.Path.Initial, "CSS&IM", Application.StartupPath + @"\CSSIM.exe");
 
-
-            /*key验证杜宾用*/
-            try
-            {
-                StringBuilder names = new StringBuilder("");
-                GetCert.GetCertName(0, 100, names);
-                txt_name.ReadOn = true;
-                txt_pswd.ReadOn = true;
-
-                txt_name.Texts = names.ToString();
-                txt_pswd.Texts = "1";
-                chb_autu.Checked = true;
-                chb_save.Checked = true;
-                timer_keyLogin.Enabled = true;
-            }
-            catch (Exception)
-            {
-
-            }
-            /*key验证杜宾用*/
         }
 
         private void SaveSettings()
